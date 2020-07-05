@@ -1,28 +1,31 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# Vault Thesis Exhibition
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free. [Check out the live demo](https://revealjs.com/).
+Ce dépôt contient le diaporama au format javascript qui supportera la soutenance
+du mémoire [vault-thesis](https://git.tic.sh/Cdiscount/vault-thesis).
 
-The framework comes with a broad range of features including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX support](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and much more.
+## Contenu
 
-<h1>
-  <a href="https://revealjs.com/installation" style="font-size: 3em;">Get Started</a>
-</h1>
+Les informations souvantes doivent absolument être contenu dans la présentation
+pour valider le référentiel :
 
-## Documentation
-The full reveal.js documentation is available at [revealjs.com](https://revealjs.com).
+### Corps de la présentation 
 
-## Online Editor
-Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
+* Faire un BPM du processus de dévellopement de Vault au sein de la CT-Intégration (préciser que ça serait trop long pour tout le SI)
+* Expliquer le Chiffrement des disques avec LUKS et préciser que c'est une bon moyen de sécuriser les périphériques nomades (automatisé pour RSSI ?)
+* Expliquer l'utilisation du VPN de Cdiscount pour l'accès à la majorité des ressources comme moyen de sécuriser les périphériques nomades
+* J'ai expérimenté de travailler avec des prestataires car la majorité du personnel de CDS sont des prestataires, il y à donc des spécificités à bosser avec eux
+* L'effort écologique principale qui peut être fait par Vault la llimitation de sa consomation et son bon dimentionnemen, donc tests de perfs et monitoring
+* Montrer les outils de monitoring des méthodes agiles (Burn down chart ,...)
+* Formation de Julien Adam > passage de connaissances graduel
 
-## License
+### Annexes
 
-MIT licensed
+* Rendu de finance EPSI ( Analyse des Bilan et Comptes de Résultats)
+* Formation Monithor qui est découpé en plusieurs parties pour s'adapter aux publiques
+* SQL avec Procédures Stockés et gestion de Droits chez Hello Asso
+* Mise en place d'un board de Business Intelligence + Data mining avec Bboost
 
-Copyright (C) 2011-2020 Hakim El Hattab, https://hakim.se
+### Pas présent
+
+Le **choix d'un prestataire** n'a pas pu être directement ou indirectement
+expérimenté.
