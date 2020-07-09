@@ -1,0 +1,11 @@
+.vertical-separator {
+	display: inline-block;
+	border: 1px solid #505050;
+	height: 150px;
+	width: 0px;
+	margin: 15px 100px;
+}
+
+.stand-out {
+	color: #e13b13;
+}

@@ -1,23 +1,499 @@
 <!doctype html>
 <html>
 	<head>
+		<title>
+			La Protection des Actifs grâce à une bonne Gestion du Secret
+		</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>reveal.js</title>
-
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-
-		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+
+				<section data-background="#283546">
+          <h2>
+              La Protection des Actifs grâce à une bonne Gestion du Secret
+          </h2>
+
+          <aside class="notes">
+						- Bonjour, je m'appel Tristan Pinaudeau, je suis alternant en 5ème
+							année de l'EPSI Bordeaux et ingénieur SRE Junior à Cdiscount.
+						- Durant les 20 prochaines minutes, je vais vous soutenir le mémoire
+							dont vous voyez l'intitulé : "La protection des actifs grâce à une
+							bonne gestion du secret"
+						- Nous allons parler de sécurité bien sur mais aussi de DevOps,
+							de virtualisation et de pratiques de développement.
+						- L'intéret de cette présentation est d'étendre le mémoire pour
+							présenter nouvel aspect du sujet qui n'a pas été traitée.
+						- Après un rapide rappel des éléments clef du projet CERBERE, nous
+							poserons une nouvelle problématique qui n'est qu'un sous-ensemble
+							de celle qui s'affiche devant vous.
+						- Nous développerons alors 2 parties qui tenterons de répondre
+							à cette question spécifique pour conclure sur une synthèse qui
+							replacera les éléments aportés dans le cadre d'origine de ce
+							mémoire.
+          </aside>
+        </section>
+
+
+				<!-- RAPPELS -->
+				<section data-background="#283546">
+
+          <section data-background="#283546">
+						<h3>Rappels</h3>
+
+            <aside class="notes">
+							Tout de suite quelques rappels qui vont synthètiser le contenu du
+							mémoire pour donner un point d'enté à cette soutenance
+            </aside>
+          </section>
+
+
+          <section data-background="#283546">
+						<blockquote>
+							&ldquo; Pour une entreprise comptant plusieurs dizaines d’équipes
+							aux méthodes et cultures diverses, commment limiter l’exposition
+							aux cyberattaques de ses actifs et de son image en évitant la
+							fuite de ses secrets sensibles ? &rdquo;
+						</blockquote>
+
+						<aside class="notes">
+							D'abord, rappelons la problématique.
+							...lire...
+							Découpons cette problématique.
+						</aside>
+          </section>
+
+
+					<section data-background="#283546">
+						<blockquote>
+							&ldquo; Une entreprise comptant plusieurs dizaines d'équipes
+							&rdquo;
+						</blockquote>
+
+						<img src="img/cdiscount.png" height="300" />
+
+						<aside class="notes">
+							Cette large entprise c'est Cdiscount.
+							Ce leader francais du commerce électronique à été le sujet
+							d'experimentation de ce mémoire.
+							On va suivre la réalisation du projet de gestion des secrets au
+							sein de Cdiscount et plus précisément d'une équipe que l'on
+							présentera plus en détail plus tard: l'équipe CT-Intégration.
+						</aside>
+					</section>
+
+
+ 					<section data-background="#283546">
+						<blockquote>
+							&ldquo; Méthodes et cultures diverses &rdquo;
+						</blockquote>
+
+						<img src="img/teams_spirit.svg" height="200" />
+
+						<aside class="notes">
+							Ensuite, la problématique parle de méthodes et cultures diverses
+							Cette constatation peut être faite dans toutes les entreprises,
+							des équipes différentes ont des approches différentes pour
+							résoudre des problèmes.
+							C'est souvent un point positif qui à tendance à encourager
+							l'innovation et la création de valeur.
+							Pourtant, dans le cadre des problèmes de sécurité, cette
+							hétérogénéité des pratiques rend très difficile le Management de
+							la sécurité des systèmes d'information si cher à ISO 27001.
+							Il nous faut une solution qui arrive à embrasser la pluralité des
+							cultures d'équipes tout en permettant une unification de la
+							gestion des secrets.
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<blockquote>
+							&ldquo; Limiter l'exposition aux cyberattaques &rdquo;
+						</blockquote>
+
+						<img src="img/hacker.svg" height="200" />
+
+						<aside class="notes">
+							L'objectif final c'est naturellement de limiter l'exposition aux
+							cyberattaques en minimisant les éléments confidentiels auquel un
+							cybercriminel pourrait avoir accès.
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<blockquote>
+							&ldquo; Protéger les actifs et l'image &rdquo;
+						</blockquote>
+
+						<img class=fragment src=img/wallet.svg height=150 />
+						<span class=vertical-separator></span>
+						<img class=fragment src=img/social_dashboard.svg height=150 />
+
+						<aside class="notes">
+							Par la, ce que veux protéger à tout prix une entreprise du secteur
+							du commerce en ligne c'est biensure ses actifs mais aussi et
+							surtout son image.
+							Depuis les révélations d'edward snowden il y à quelques année et
+							plus récemment la mise en place du RGPD en europe, l'opinion
+							publique est de plus en plus sensible à sa sécurité de ses donnée
+							privée.
+							La sécurité est donc une contraine pour Cdiscount mais également
+							un potentiel argument marketing face aux géant étrangés qui sont
+							déja largement critiqués sur ce sujet.
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<blockquote>
+							&ldquo; Empêcher la fuite des secrets sensibles &rdquo;
+						</blockquote>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							Il faut donc à tout prix protéger les secrets sensibles, ceux des
+							clients mais aussi les secrets stratégiques qui sont les moteurs
+							de l'activité de toute entreprise.
+							Parmis ces secrets on retrouve le contenu des bases de données
+							biensure mais aussi le code source et même les rapports des
+							équipes de datascience.
+						</aside>
+					</section>
+
+
+          <section data-background="#283546">
+						<h4>Solution</h4>
+
+						<p style="color: green">TODO : add scheme before</p>
+						<span class=vertical-separator></span>
+						<p style="color: green">TODO : add scheme after</p>
+
+						<aside class="notes">
+							Image du problème à gauche
+							Image de la solution à droite
+						</aside>
+          </section>
+
+
+          <section data-background="#283546">
+						<h4>Cadre Manageriale</h4>
+
+						<img src="img/scrum.svg" height=200 />
+
+						<aside class="notes">
+							On va y revenir dans ce mémoire
+						</aside>
+          </section>
+
+        </section>
+
+
+				<section data-background="#283546">
+					<h3>Problématique</h3>
+
+					<blockquote>
+						&ldquo; Quelles <strong class=stand-out>pratiques de développement
+						</strong> et <strong class=stand-out>solutions techniques</strong>
+						permettent d'apporter un cadre sain et sécurisé nécessaire au
+						déploiement d'une plateforme de <strong class=stand-out>coffre-fort
+						numérique</strong> ?&rdquo;
+					</blockquote>
+
+					<aside class=notes>
+						On parle d'abord de SRE et des méthodes agiles
+						Ensuite on verra la sécurité du développement nomade
+					</aside>
+				</section>
+
+
+				<!-- PART 1 -->
+				<section data-background="#283546">
+					<h3>Utilisation des méthodes SRE</h3>
+					<ol>
+						<li>Infrastructure As Code</li>
+						<li>Tests unitaires et CI/CD</li>
+						<li>Approche Produit</li>
+					</ol>
+
+					<aside class="notes">
+						- Présenter SRE
+						- Présenter Agile
+						- Présenter Produit
+					</aside>
+				</section>
+
+
+				<section data-background="#283546">
+
+					<section data-background="#283546">
+						<h4>Infrastructure As Code</h4>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Concepte</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Technologies</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Fonctionnement</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture de la solution</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture du code</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</section>
+
+
+				<section data-background="#283546">
+
+					<section data-background="#283546">
+						<h4>Tests</h4>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Concepte</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Technologies</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Fonctionnement</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture de la solution</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture du code</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</section>
+
+
+				<section data-background="#283546">
+
+					<section data-background="#283546">
+						<h4>Intégration Continue - Déploiement Continue</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Concepte</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Technologies</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Fonctionnement</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture de la solution</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture du code</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</section>
+
+
+				<section data-background="#283546">
+
+					<section data-background="#283546">
+						<h4>Approche Produit</h4>
+
+						<aside class="notes">
+							- Indépendance du dévellopement avec l'inforastructure
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Concepte</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Technologies</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Fonctionnement</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture de la solution</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Architecture du code</h5>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+				</section>
+
+
+				<!-- PART 2 -->
+				<section data-background="#283546">
+					<h3>Sécurité du dévellopement nomade</h3>
+					<ol>
+						<li>Sécurité des supports</li>
+						<li>Sécurité des échanges</li>
+						<li>Sécurité du développement</li>
+					</ol>
+
+					<aside class="notes">
+						1. chiffrement des disques
+						2. VPN + mails chiffrés
+						3. git++
+					</aside>
+				</section>
+
+
+				<section data-background="#283546">
+					<h4>Sécurité des supports</h4>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+
+				<section data-background="#283546">
+					<h4>Sécurité des échanges</h4>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+
+				<section data-background="#283546">
+					<h4>Sécurité du développement</h4>
+
+					<aside class="notes">
+						- Processus de Développement
+						- Processus de Déploiement
+					</aside>
+				</section>
+
+ 
+				<!-- CONCLUSION -->
+				<section data-background="#283546">
+					<h3>Conclusion</h3>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
 			</div>
 		</div>
 
@@ -26,13 +502,8 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
