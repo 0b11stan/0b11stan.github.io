@@ -173,13 +173,14 @@
 
 
           <section data-background="#283546">
-						<h4>Solution</h4>
+						<h4>Solution - CERBERE</h4>
 
 						<p style="color: green">TODO : add scheme before</p>
 						<span class=vertical-separator></span>
 						<p style="color: green">TODO : add scheme after</p>
 
 						<aside class="notes">
+							Projet CERBERE
 							Image du problème à gauche
 							Image de la solution à droite
 						</aside>
@@ -192,7 +193,8 @@
 						<img src="img/scrum.svg" height=200 />
 
 						<aside class="notes">
-							On va y revenir dans ce mémoire
+							On va y revenir plus tard mais tout ce projet à été développé dans
+							une ambiance agile.
 						</aside>
           </section>
 
@@ -211,75 +213,67 @@
 					</blockquote>
 
 					<aside class=notes>
-						On parle d'abord de SRE et des méthodes agiles
-						Ensuite on verra la sécurité du développement nomade
+						Cette problématique va nous permettre de parler de deux éléments
+						qui me semble très importants pour le développement d'un projet de
+						sécurité informatique.
+						On parle d'abord de SRE et des méthodes agiles qui sont les
+						fondations des méthodes de travail utilisés à la CT-Intégration
+						Ensuite on verra la sécurité du développement nomade qui à pris une
+						toute nouvelle échelle depuis que la population mondial est forcé de
+						travailler a distance.
 					</aside>
 				</section>
 
 
 				<!-- PART 1 -->
-				<section data-background="#283546">
-					<h3>Utilisation des méthodes SRE</h3>
-					<ol>
-						<li>Infrastructure As Code</li>
-						<li>Tests unitaires et CI/CD</li>
-						<li>Approche Produit</li>
-					</ol>
-
-					<aside class="notes">
-						- Présenter SRE
-						- Présenter Agile
-						- Présenter Produit
-					</aside>
-				</section>
-
-
-				<section data-background="#283546">
+				<section>
 
 					<section data-background="#283546">
-						<h4>Infrastructure As Code</h4>
+						<h3>Utilisation des méthodes SRE</h3>
+						<ol>
+							<li>Infrastructure As Code</li>
+							<li>Tests unitaires et CI/CD</li>
+							<li>Approche Produit</li>
+						</ol>
 
 						<aside class="notes">
+							- Présenter SRE
+							- Présenter Agile
+							- Présenter Produit
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
-						<h5>Concepte</h5>
+						<div style="float: left; text-align: left">
+							<p>
+								<strong class=stand-out>S</strong>
+								<span class=fragment>ite</span>
+							</p>
+							<p>
+								<strong class=stand-out>R</strong>
+								<span class=fragment>reliability</span>
+							</p>
+							<p>
+								<strong class=stand-out>E</strong>
+								<span class=fragment>ngineering</span>
+							</p>
+						</div>
+
+						<span class=fragment>
+							<img class=fragment src="img/server_cluster.svg" width=200 />
+							<span style="margin: 15px 50px" class=vertical-separator></span>
+						</span>
+						<img class=fragment src="img/devellopper_activity.svg" width=200 />
 
 						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section data-background="#283546">
-						<h5>Technologies</h5>
-
-						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section data-background="#283546">
-						<h5>Fonctionnement</h5>
-
-						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section data-background="#283546">
-						<h5>Architecture de la solution</h5>
-
-						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section data-background="#283546">
-						<h5>Architecture du code</h5>
-
-						<aside class="notes">
+							Expliquons un peu la SRE, SRE c'est l'acronyme de .... qui se
+							traduit en français par "Science de la fiabilité".
+							Google s'est dis un jour, "et si je donnais la responsabilité de
+							quelque chose d'aussi serieux que mes serveurs de production à
+							des gens aussi superficiels que des développeurs"
+							Consitué des équipes hétérogènes de devs qui devaient trouver des
+							solutions logiciels aux problèmes opérationnels habituels
 						</aside>
 					</section>
 
@@ -289,9 +283,11 @@
 				<section data-background="#283546">
 
 					<section data-background="#283546">
-						<h4>Tests</h4>
+						<h4 style="color: #e13b13">Infrastructure As Code</h4>
 
 						<aside class="notes">
+							Pour moi un des concepte les plus important de ce mouvement c'est
+							celui de "l"inforastructure as code"
 						</aside>
 					</section>
 
@@ -299,15 +295,29 @@
 					<section data-background="#283546">
 						<h5>Concepte</h5>
 
+						<img class=fragment src="img/code_review.svg" width=200 />
+						<span class=vertical-separator></span>
+						<img class=fragment src="img/server_cluster.svg" width=200 />
+
 						<aside class="notes">
+							Le principe c'est d'abstraire les problématique système en
+							proposant des outils et des syntax qui nous permettrons de décrire
+							l'état d'une infrastructure
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
-						<h5>Technologies</h5>
+						<!--<h5>Technologie</h5>-->
+
+						<img src="img/ansible.png" height=200 />
+						<!--<span style="height: 100px" class=vertical-separator></span>-->
+						<!--<img class=fragment src="img/terraform.png" height=100 />-->
 
 						<aside class="notes">
+							Pour l'infrastructure as code Cdiscount utilise de nombreuses
+							technologies différentes mais dans notre cas c'est
+							ansible un outil communautaire libre qui nous a été utile
 						</aside>
 					</section>
 
@@ -315,13 +325,87 @@
 					<section data-background="#283546">
 						<h5>Fonctionnement</h5>
 
+						<p style="color: green">TODO : add scheme</p>
+
 						<aside class="notes">
+							Ansible permet de définir l'infrastructure sous forme d'un
+							ensemble de fichier yaml qu'on appel une recette. L'un d'eux
+							contient un inventaire des machines ciblés par la recette, les
+							autres sont un enchainement de tâches à appliqués qui peuvent être
+							soumises à des conditions en fonction de variables d'entée de la
+							recette. Ces tâches sont répartis dans des rôles qu'on appliques
+							alors aux machines de l'inventaire.
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
 						<h5>Architecture de la solution</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							Rappelons rapidement l'architecture que l'on avait décrit dans
+							vault. La plateforme est répartie sur 2 datacenter et des serveurs
+							de fragments doivent nous permettre de dévérouiller le coffre fort
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Inventaire</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Définition de l'infrastructure</h5>
+
+						<pre><code class="ansible"
+											 data-trim
+								 			 data-line-numbers="|2,4,15,17|6-12|28,30|32-35|"
+											 style="font-size: 17px; line-height: 19px;">
+---
+- hosts: "{{ groups['dc1'] | intersect(groups['vault']) }}"
+  roles:
+    - role: vault-server
+      vars:
+        ca_directory: /home/tristan/Desktop/vault_sandbox_ca/
+        us_directory: /home/tristan/Desktop/vault_sandbox_us/
+        secret_shares: 2
+        secret_threshold: 1
+        ha_endpoint: >-
+          {{ hostvars[ansible_play_hosts[0]]
+              ['ansible_facts']['default_ipv4']['address'] }}
+
+
+- hosts: "{{ groups['dc2'] | intersect(groups['vault']) }}"
+  roles:
+    - role: vault-server
+      vars:
+        ca_directory: /home/tristan/Desktop/vault_sandbox_ca/
+        us_directory: /home/tristan/Desktop/vault_sandbox_us/
+        secret_shares: 2
+        secret_threshold: 1
+        ha_endpoint: >-
+          {{ hostvars[ansible_play_hosts[0]]
+              ['ansible_facts']['default_ipv4']['address'] }}
+
+
+- hosts: fragment
+  roles:
+    - role: fragment-server
+      vars:
+        cacert: /home/tristan/Desktop/vault_sandbox_ca/ca.pem
+        keys: >-
+          {{ lookup('file', '/home/tristan/Desktop/vault_sandbox_us/keys')
+          | from_json }}
+...
+						</code></pre>
 
 						<aside class="notes">
 						</aside>
@@ -330,6 +414,8 @@
 
 					<section data-background="#283546">
 						<h5>Architecture du code</h5>
+
+						<p style="color: green">TODO : add scheme</p>
 
 						<aside class="notes">
 						</aside>
@@ -341,7 +427,7 @@
 				<section data-background="#283546">
 
 					<section data-background="#283546">
-						<h4>Intégration Continue - Déploiement Continue</h5>
+						<h4 style="color: #e13b13">Tests</h4>
 
 						<aside class="notes">
 						</aside>
@@ -349,15 +435,32 @@
 
 
 					<section data-background="#283546">
-						<h5>Concepte</h5>
+						<h5>Concept</h5>
+
+						<img src="img/online_test.svg" width=400 />
 
 						<aside class="notes">
+							Dans le monde opérationnel, nous sommes déjà habitué aux
+
+							- tests de PRA
+							- tests de sauvegarde
+							- tests de performance même
+
+							Mais le monde du développement logiciel est habitué a automatiser
+
+							- tests de non régression
+							- tests unitaires
+							- tests d'acceptances
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
 						<h5>Technologies</h5>
+
+						<img src="img/molecule.png" width=200 />
+						<span class=vertical-separator></span>
+						<img src="img/docker.png" width=200 />
 
 						<aside class="notes">
 						</aside>
@@ -367,15 +470,10 @@
 					<section data-background="#283546">
 						<h5>Fonctionnement</h5>
 
-						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section data-background="#283546">
-						<h5>Architecture de la solution</h5>
+						<p style="color: green">TODO : add scheme</p>
 
 						<aside class="notes">
+							molecule provisionne infra et joue recette contre infra
 						</aside>
 					</section>
 
@@ -383,7 +481,21 @@
 					<section data-background="#283546">
 						<h5>Architecture du code</h5>
 
+						<p style="color: green">TODO : add scheme</p>
+
 						<aside class="notes">
+							on ajoute des répertoires
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>TDD</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							on peut aller encore plus loin
 						</aside>
 					</section>
 
@@ -393,16 +505,19 @@
 				<section data-background="#283546">
 
 					<section data-background="#283546">
-						<h4>Approche Produit</h4>
+						<h4 style="color: #e13b13">
+							Intégration Continue - Déploiement Continue
+						</h4>
 
 						<aside class="notes">
-							- Indépendance du dévellopement avec l'inforastructure
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
-						<h5>Concepte</h5>
+						<h5>Concept</h5>
+
+						<img src="img/continuous_integration.svg" width=300 />
 
 						<aside class="notes">
 						</aside>
@@ -412,6 +527,8 @@
 					<section data-background="#283546">
 						<h5>Technologies</h5>
 
+						<img src="img/version_control.svg" width=400 />
+
 						<aside class="notes">
 						</aside>
 					</section>
@@ -420,15 +537,86 @@
 					<section data-background="#283546">
 						<h5>Fonctionnement</h5>
 
+						<p style="color: green">TODO : add scheme</p>
+
 						<aside class="notes">
+							schema dev into test molecule into deploy ansible
 						</aside>
 					</section>
 
 
 					<section data-background="#283546">
-						<h5>Architecture de la solution</h5>
+						<h5>Pipline</h5>
+
+						<p style="color: green">TODO : add scheme</p>
 
 						<aside class="notes">
+							BPM
+						</aside>
+					</section>
+
+				</section>
+
+
+				<section data-background="#283546">
+
+					<section data-background="#283546">
+						<h4 style="color: #e13b13">Approche Produit</h4>
+
+						<aside class="notes">
+							poussé par cdiscount très spécifiquement depuis cette année
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Concept</h5>
+
+						<p style="color: green">TODO : add picture</p>
+
+						<aside class="notes">
+							de plus en plus courant
+							vient de pair avec la démocratisation des méthodes agiles
+							souvent en opposition avec l'approche projet jugé trop vieille
+							est plus proche de agile par sont approche continue et iterative
+							une équipe est en charge d'un produit plus de quelques projets
+							permet de la modularité
+							c'est un mindset
+							on traite un produit comme quelquechose qu'on veut vendre à
+							l'exterieur
+							permet de remettre le client au centre
+							permet à cdiscount d'externaliser le produit AWSlike
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Technologies</h5>
+
+						<p style="color: green">TODO : add picture</p>
+
+						<aside class="notes">
+							technologies qui permettent la modularité et la gestion
+							de périmettre
+							tout ce qui est gestion projet et documentation jira / confluence
+							mais chaque espace orienté autour d'un produit (page monithor)
+							tout ce qui permet la modularité : docker, gestion des interfaces
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Fonctionnement</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							pour appliquer cette approche produit on à voulu être distant du
+							reste de l'infra, on traite cdiscount comme un client à qui on
+							intègre un produit : vault
+							ainsi, aptly séparé, container séparé, ...
+							un max de documentation
+							playbooks généralistes
 						</aside>
 					</section>
 
@@ -436,7 +624,11 @@
 					<section data-background="#283546">
 						<h5>Architecture du code</h5>
 
+						<p style="color: green">TODO : add scheme</p>
+
 						<aside class="notes">
+							repos submodules indépendants
+							roles testés unitairements
 						</aside>
 					</section>
 
@@ -453,6 +645,7 @@
 					</ol>
 
 					<aside class="notes">
+						covid à forcé à externaliser le développement
 						1. chiffrement des disques
 						2. VPN + mails chiffrés
 						3. git++
@@ -461,28 +654,117 @@
 
 
 				<section data-background="#283546">
-					<h4>Sécurité des supports</h4>
 
-					<aside class="notes">
-					</aside>
+					<section data-background="#283546">
+						<h4 style="color: #e13b13">Sécurité des supports</h4>
+
+						<aside class="notes">
+							2 types de supports :
+							logiciels et materiels
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Supports logiciels</h5>
+
+						<p style="color: green">TODO : add images</p>
+
+						<aside class="notes">
+							confluence
+							jira
+							gitbucket
+							approche produit : ouvert à l'implementation et fermé à la
+							modification
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Supports materiels</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							comme vault, les disques des machines sont chiffrés
+						</aside>
+					</section>
+
 				</section>
 
 
 				<section data-background="#283546">
-					<h4>Sécurité des échanges</h4>
 
-					<aside class="notes">
-					</aside>
+					<section data-background="#283546">
+						<h4 style="color: #e13b13">Sécurité des échanges</h4>
+
+						<aside class="notes">
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Sécurité superficielle</h5>
+
+						<p style="color: green">TODO : add screens</p>
+
+						<aside class="notes">
+							utilisation de vpn
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Sécurité en profondeur</h5>
+
+						<p style="color: green">TODO : add screens</p>
+
+						<aside class="notes">
+							mails chiffrés
+						</aside>
+					</section>
+
 				</section>
 
 
 				<section data-background="#283546">
-					<h4>Sécurité du développement</h4>
 
-					<aside class="notes">
-						- Processus de Développement
-						- Processus de Déploiement
-					</aside>
+					<section data-background="#283546">
+						<h4 style="color: #e13b13">Sécurité des processus</h4>
+
+						<aside class="notes">
+							- Processus de Développement
+							- Processus de Déploiement
+							outil de control de version déjà utile de base mais indispensable
+							dans ces conditions
+							on va voir que SRE aide grandement cette partie
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Processus de développement</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+						<p style="color: green">TODO : add asciiart</p>
+
+						<aside class="notes">
+							utilisation des branches git (#SRE)
+						</aside>
+					</section>
+
+
+					<section data-background="#283546">
+						<h5>Processus de Déploiement</h5>
+
+						<p style="color: green">TODO : add scheme</p>
+
+						<aside class="notes">
+							inspiration ITIL => changes
+							utilisation de la CICD va améliorer ça
+						</aside>
+					</section>
+
 				</section>
 
  
