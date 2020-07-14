@@ -3,9 +3,45 @@
 	border: 1px solid #505050;
 	height: 150px;
 	width: 0px;
-	margin: 15px 100px;
+	margin: 15px 50px;
 }
 
 .stand-out {
 	color: #e13b13;
+}
+
+.layer-luks {
+	background-color: white;
+	border-radius: 10px;
+}
+
+.layer {
+	background-color: grey;
+	color: #aaaaaa;
+	border-radius: 10px;
+}
+
+.animation-parent {
+	position: relative;
+	width: 500px;
+	margin: auto;
+}
+
+.animation-child {
+	position: absolute;
+}
+
+/** OVERRIDING **/
+
+.reveal .progress {
+	color: #e13b13 !important;
+}
+
+.reveal .controls-arrow {
+  color: #e13b13 !important;
+}
+
+pre {
+	tab-size: 2;
+	-moz-tab-size: 2;
 }
