@@ -18,7 +18,7 @@
 
 
 				<!--section data-background="#283546"-->
-				<section>
+				<section data-background="img/doors_new.jpg">
           <h2>
               La Protection des Actifs grâce à une bonne Gestion du Secret
           </h2>
@@ -38,6 +38,11 @@
 						développerons alors 2 parties qui tenterons de répondre à cette
 						question spécifique pour conclure sur une synthèse qui replacera les
 						éléments aportés dans le cadre d'origine de ce mémoire.
+
+						POURQUOI CHOISI SRE ?
+						MONTRER AVEC POINTEUR
+						EXPLIQUER BEAUCOUP
+						RÉSUMÉ DE L'ALTERNANCE
           </aside>
         </section>
 
@@ -200,6 +205,9 @@
 
 
           <section style="text-align: center">
+						<!-- TODO add a sentance -->
+						<!-- TODO remove configuration -->
+						<!-- TODO add token -->
 						<div class="animation-parent">
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_0.svg" height=500 />
@@ -234,7 +242,7 @@
 
 
           <section>
-						<h4>Cadre Manageriale</h4>
+						<h4>Methodes de développement</h4>
 
 						<img src="img/scrum.svg" height=200 />
 
@@ -249,7 +257,15 @@
 
 				<section>
 					<h3>Problématique</h3>
+					<!-- TODO -->
 
+					<blockquote class=fragment>
+						&ldquo; Comment les pratiques et technologies <strong
+						class=stand-out>SRE</strong> permettent d'apporter un cadre sain et
+						sécurisé nécessaire au déploiement d'une plateforme de <strong
+						class=stand-out>coffre-fort numérique</strong> ?&rdquo;
+					</blockquote>
+					<!--
 					<blockquote class=fragment>
 						&ldquo; Quelles <strong class=stand-out>pratiques de développement
 						</strong> et <strong class=stand-out>solutions techniques</strong>
@@ -257,6 +273,7 @@
 						déploiement d'une plateforme de <strong class=stand-out>coffre-fort
 						numérique</strong> ?&rdquo;
 					</blockquote>
+					-->
 
 					<aside class=notes>
 						Pour le reste de ce mémoire, nous allons nous concentrer sur une
@@ -276,10 +293,11 @@
 				<section>
 
 					<section>
-						<h3>Utilisation des méthodes SRE</h3>
+						<h3>S. R. E.</h3>
 						<ol>
 							<li>Infrastructure As Code</li>
-							<li>Tests unitaires et CI/CD</li>
+							<li>Tests Automatisés</li>
+							<li>Intégration Continue</li>
 							<li>Approche Produit</li>
 						</ol>
 
@@ -345,7 +363,7 @@
 								<tr>
 									<th>DEV</th>
 									<td>Agilité</td>
-									<td>Garantie</td>
+									<td>Sécurité</td>
 								</tr>
 							</tbody>
 						</table>
@@ -380,6 +398,9 @@
 
 					<section>
 						<h4 style="color: #e13b13">Infrastructure As Code</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
 							Pour moi un des concepte les plus important de ce mouvement c'est
@@ -419,6 +440,7 @@
 					<section>
 						<h5>Fonctionnement</h5>
 
+						<!-- TODO rond autour d'ansible -->
 						<img src="img/diag_ansible.svg" height=400 />
 
 						<aside class="notes">
@@ -544,6 +566,7 @@
 
 					<section>
 						<h5>Architecture de la solution</h5>
+						<!-- TODO transition en zoom -->
 
 						<img src="img/diag_vault_platform.svg" width=1000 />
 					</section>
@@ -551,6 +574,7 @@
 
 					<section>
 						<h5>Répartition des rôles</h5>
+						<!-- TODO expliciter instance vault, trop éclaté -->
 
 						<div class="animation-parent" style="width: 700px">
 							<div class="animation-child fragment fade-in-then-out">
@@ -650,7 +674,10 @@
 				<section>
 
 					<section>
-						<h4 style="color: #e13b13">Tests</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
+						<h4 style="color: #e13b13">Tests Automatisés</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
 						</aside>
@@ -849,9 +876,10 @@
 				<section>
 
 					<section>
-						<h4 style="color: #e13b13">
-							Intégration Continue - Déploiement Continue
-						</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
+						<h4 style="color: #e13b13">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
 						</aside>
@@ -916,7 +944,13 @@
 				<section>
 
 					<section>
+						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">
+							Intégration / Déploiement Continue
+						</h4>
 						<h4 style="color: #e13b13">Approche Produit</h4>
+
 
 						<aside class="notes">
 							poussé par cdiscount très spécifiquement depuis cette année
@@ -967,7 +1001,14 @@
 					<section>
 						<h5>Fonctionnement</h5>
 
-						<p style="color: green">TODO : add scheme</p>
+						<div class="animation-parent">
+							<div class="animation-child fragment fade-in-then-out">
+								<img src="img/diag_vault_product_1.svg" height=500 />
+							</div>
+							<div class="animation-child fragment fade-in-then-out">
+								<img src="img/diag_vault_product_2.svg" height=500 />
+							</div>
+						</div>
 
 						<aside class="notes">
 							pour appliquer cette approche produit on à voulu être distant du
@@ -983,7 +1024,8 @@
 					<section>
 						<h5>Architecture du code</h5>
 
-						<p style="color: green">TODO : add scheme</p>
+						<!--TODO ajouter légendes partout -->
+						<img src="img/diag_code_arch_product.svg" height=500 />
 
 						<aside class="notes">
 							repos submodules indépendants
@@ -994,7 +1036,7 @@
 				</section>
 
 
-				<!-- PART 2 -->
+				<!-- PART 2
 				<section>
 					<h3>Sécurité du dévellopement nomade</h3>
 					<ol>
@@ -1141,6 +1183,7 @@
 					</section>
 
 				</section>
+				-->
 
  
 				<!-- CONCLUSION -->
