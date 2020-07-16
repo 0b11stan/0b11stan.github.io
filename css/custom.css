@@ -41,6 +41,11 @@
   color: #e13b13 !important;
 }
 
+.pointer {
+	/*cursor: url('http://www.rw-designer.com/cursor-extern.php?id=84129'), auto !important;*/
+	cursor: url('../img/pointer.png'), auto !important;
+}
+
 pre {
 	tab-size: 2;
 	-moz-tab-size: 2;
