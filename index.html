@@ -10,7 +10,8 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css"
+					id="highlight-theme">
 	</head>
 	<body class=pointer>
 		<div class="reveal">
@@ -316,9 +317,9 @@
 
 					<blockquote class=fragment>
 						&ldquo; Comment les pratiques et technologies <strong
-						class=stand-out>SRE</strong> permettent d'apporter un cadre sain et
-						sécurisé nécessaire au déploiement d'une plateforme de <strong
-						class=stand-out>coffre-fort numérique</strong> ?&rdquo;
+						class=stand-out>DevOps / SRE</strong> permettent d'apporter un cadre
+						sain et sécurisé nécessaire au déploiement d'une plateforme de
+						<strong class=stand-out>coffre-fort numérique</strong> ?&rdquo;
 					</blockquote>
 					<!--
 					<blockquote class=fragment>
@@ -350,14 +351,14 @@
 						<ol>
 							<li>Infrastructure As Code</li>
 							<li>Tests Automatisés</li>
-							<li>Intégration Continue</li>
+							<li>Intégration Continu</li>
 							<li>Approche Produit</li>
 						</ol>
 
 						<aside class="notes">
 							Nous verrons comment ce projet utilise ou souhaite utiliser les
 							conceptes comme l'infrastrucutre as code, les tests automatisé,
-							l'intégration continue et l'approche produit pour développer une
+							l'intégration continu et l'approche produit pour développer une
 							plateforme de sécurité selon les principes SRE.
 							<br><br>
 							Avant d'entrer au coeur de cette soutenance, faisont le point sur
@@ -374,7 +375,7 @@
 							</p>
 							<p>
 								<strong class=stand-out>R</strong>
-								<span class=fragment>reliability</span>
+								<span class=fragment>eliability</span>
 							</p>
 							<p>
 								<strong class=stand-out>E</strong>
@@ -389,14 +390,14 @@
 						<img class=fragment src="img/devellopper_activity.svg" width=200 />
 
 						<aside class="notes">
-							SRE c'est l'acronyme de .... qui se
-							traduit en français par "Science de la fiabilité". C'est une
-							méthode issue des équipes expérimentales de Google qui est très
-							ancrée dans les pratiques DevOps.
+							SRE c'est l'acronyme de .... qui se traduit en français par
+							"Science de la fiabilité". C'est une méthode issue des équipes
+							expérimentales de Google qui est très ancrée dans les pratiques
+							DevOps.
 							<br><br>
-							Un jour, les ingénieurs de google se sont dis: "et si je donnais la
-							responsabilité de quelque chose d'aussi serieux que mes serveurs
-							de production 
+							Un jour, les ingénieurs de google se sont dis: "et si je donnais
+							la responsabilité de quelque chose d'aussi serieux que mes
+							serveurs de production 
 							<br><br>
 							à des gens aussi superficiels que des développeurs".
 							<br><br>
@@ -429,30 +430,31 @@
 						</table>
 
 						<aside class="notes">
-							En fait ils se sont rendu compte qu'ils avaient deux profile complémentaires
-							aux cultures extrêmement différentes dans l'entreprise
+							En fait ils se sont rendu compte qu'ils avaient deux profile
+							complémentaires aux cultures extrêmement différentes dans
+							l'entreprise
 							<br><br>
-							D'un côté des équipes opérationnels très
-							rigoureuses appliquaient des processus de management très
-							rigides pour assurer une sécurité optimale. Cependant le grand
-							nombre de processus et la grand responsabilité qui pesait sur eux
-							était la cause de plus en plus de lenteurs, de coûts financiers et
-							d'une dégradation des qualités de travail et du morale de ces
-							équipes.
+							D'un côté des équipes opérationnels très rigoureuses appliquaient
+							des processus de management très rigides pour assurer une
+							sécurité optimale. Cependant le grand nombre de processus et la
+							grand responsabilité qui pesait sur eux était la cause de plus en
+							plus de lenteurs, de coûts financiers et d'une dégradation des
+							qualités de travail et du morale de ces équipes.
 							<br><br>
-							De l'autre côté, les développeurs se tournaient de plus en plus vers
-							l'agile et fournissaient des fonctionnalités innovantes de
-							façon de plus en plus dynamiques. Malheureusement, ils n'avait pas cette
-							"culture de la production" et cette rigeur qui permettait de
+							De l'autre côté, les développeurs se tournaient de plus en plus
+							vers l'agile et fournissaient des fonctionnalités innovantes de
+							façon de plus en plus dynamiques. Malheureusement, ils n'avait pas
+							cette "culture de la production" et cette rigeur qui permettait de
 							garantir une excellente sécurité lorsqu'il s'agit de gérer
-							l'environnement chaotiques que peut devenir un réseau en production.
+							l'environnement chaotiques que peut devenir un réseau en
+							production.
 							<br><br>
  							Ils ont donc décidé de consitué des équipes hétérogènes
-							d'experts systèmes et réseaux et de développeurs qui devaient trouver des
-							solutions logiciels aux problèmes opérationnels habituels.
-							Les uns apportaient leur problématiques et exigeance de sécurité
-							et de robustesse et les autres leurs méthodes et outils de travail
-							dynamiques.
+							d'experts systèmes et réseaux et de développeurs qui devaient
+							trouver des solutions logiciels aux problèmes opérationnels
+							habituels. Les uns apportaient leur problématiques et exigeance de
+							sécurité et de robustesse et les autres leurs méthodes et outils
+							de travail dynamiques.
 						</aside>
 					</section>
 
@@ -464,13 +466,15 @@
 					<section>
 						<h4 style="color: #e13b13">Infrastructure As Code</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
-						<h4 style="color: #e13b13; opacity: 0.3">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">
+							Intégration / Déploiement Continu
+						</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
 							Maintenant que nous avons une vue plus clair de SRE attaquons ce
-							qui est pour moi un des concepte les plus important ce mouvement c'est
-							celui de "l"inforastructure as code"
+							qui est pour moi un des concepte les plus important ce mouvement
+							c'est celui de "l"inforastructure as code"
 						</aside>
 					</section>
 
@@ -483,9 +487,9 @@
 						<img class=fragment src="img/code_review.svg" width=200 />
 
 						<aside class="notes">
-							Le principe est simple: on veux abstraire les problématique système en
-							proposant des outils et une syntax qui nous permettrons de décrire
-							l'état souhaité d'une infrastructure par du code.
+							Le principe est simple: on veux abstraire les problématique
+							système en proposant des outils et une syntax qui nous permettrons
+							de décrire l'état souhaité d'une infrastructure par du code.
 						</aside>
 					</section>
 
@@ -511,17 +515,17 @@
 
 						<aside class="notes">
 							Ansible permet de définir l'infrastructure sous forme d'un
-							ensemble de fichier au format yaml qu'on appel une recette. L'un d'eux
-							contient un inventaire des machines ciblés par la recette, les
-							autres sont un enchainement de tâches à appliqués qui peuvent être
-							soumises à des conditions en fonction de variables d'entée. Ces
-							tâches sont répartis dans des rôles qu'on appliques alors aux
+							ensemble de fichier au format yaml qu'on appel une recette. L'un
+							d'eux contient un inventaire des machines ciblés par la recette,
+							les autres sont un enchainement de tâches à appliqués qui peuvent
+							être soumises à des conditions en fonction de variables d'entée.
+							Ces tâches sont répartis dans des rôles qu'on appliques alors aux
 							machines de l'inventaire.
 							<br><br>
 							On à donc fondamentalement deux activité importantes quand on fait
 							de l'infrastructure as code: définir un inventaire et développer
-							le code ansible qui est une déscription précise de l'état dans lequel
-							chaque machine doit se trouver à l'execution de la recette.
+							le code ansible qui est une déscription précise de l'état dans
+							lequel chaque machine doit se trouver à l'execution de la recette.
 						</aside>
 					</section>
 
@@ -536,12 +540,13 @@
 							à aidé. Ce gestionnaire d'inventaire permet de définir sous forme
 							d'arbre une infrastructure et de l'exporter ensuite dans un format
 							compatible avec Ansible. On voit sur l'image que le projet cerbere
-							contient une branche pour keycloak et une branche (secrets pour vault).
-							Grâce à sa vue sous forme d'arbre, jack permet de définir des groupes.
-							Par exemple, nous voyons un groupe pour chaque datacenter, un groupe
-							pour les serveurs vault et un groupe pour les serveurs de fragment.
-							On peut donc accéder par exemple à tout les serveurs de fragments
-							de bordeaux en prenant l'intersection des ensembles dc1 et fragments.
+							contient une branche pour keycloak et une branche (secrets pour
+							vault). Grâce à sa vue sous forme d'arbre, jack permet de définir
+							des groupes. Par exemple, nous voyons un groupe pour chaque
+							datacenter, un groupe pour les serveurs vault et un groupe pour
+							les serveurs de fragment. On peut donc accéder par exemple à tout
+							les serveurs de fragments de bordeaux en prenant l'intersection
+							des ensembles dc1 et fragments.
 						</aside>
 					</section>
 
@@ -757,7 +762,9 @@
 					<section>
 						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
 						<h4 style="color: #e13b13">Tests Automatisés</h4>
-						<h4 style="color: #e13b13; opacity: 0.3">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13; opacity: 0.3">
+							Intégration / Déploiement Continu
+						</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
@@ -959,7 +966,7 @@
 					<section>
 						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
-						<h4 style="color: #e13b13">Intégration / Déploiement Continue</h4>
+						<h4 style="color: #e13b13">Intégration / Déploiement Continu</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Approche Produit</h4>
 
 						<aside class="notes">
@@ -999,7 +1006,7 @@
 
 
 					<section>
-						<h5>Pipline</h5>
+						<h5>Pipeline</h5>
 
 						<img src="img/diag_pipline.svg" width=600 />
 
@@ -1028,7 +1035,7 @@
 						<h4 style="color: #e13b13; opacity: 0.3">Infrastructure As Code</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">Tests Automatisés</h4>
 						<h4 style="color: #e13b13; opacity: 0.3">
-							Intégration / Déploiement Continue
+							Intégration / Déploiement Continu
 						</h4>
 						<h4 style="color: #e13b13">Approche Produit</h4>
 

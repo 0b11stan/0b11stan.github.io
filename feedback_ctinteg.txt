@@ -1,0 +1,17 @@
+ils faut plus détailler le lien entre les deux problématiques
+je prend trop de recule sur la réalisation, plus de première personne du sing
+je parle trop vite quand je lis
+trop de slides ?
+c'est cool quand j'explique les conceptes
+je passes trop vite les schémas détaillés
+des termes comme keycloak, ca et raft ne sont pas expliqué
+il faut faire une phrase sur shamir et les serveurs de fragments
+utiliser plus de captures d'écran ?
+pas oublier de pointer ce que je montre
+on entend que je lis au début, c'était plus naturel après
+je ne présente pas assez ma démarche de recherche
+montrer le sommaire avent la partie rappel
+mettre au présent les parties ou je parle du mémoire, ils l'on sous les yeux !
+ajouter mot sur les flèches dans la slide fonctionnement des tests auto
+expliquer que le déploiement continue permet de réduire les temps de dev
+expliquer que les schémas dans la slide rappel>solution sont existant => cible
