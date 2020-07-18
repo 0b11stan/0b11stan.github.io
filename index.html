@@ -48,11 +48,26 @@
         </section>
 
 
+				<section>
+
+					<ol>
+						<li>Rappels</li>
+						<li>Problématique</li>
+						<li>S.R.E = Security</li>
+					</ol>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+
 				<!-- RAPPELS -->
 				<section>
 
           <section>
-						<h3>Rappels</h3>
+						<!-- TODO racourcir rappel -->
+						<h3>Rappels du mémoire</h3>
+						<p style="color: #444">( TL ; DR )</p>
 
             <aside class="notes">
 							Tout de suite ces quelques rappels qui vont reprendre et
@@ -186,59 +201,42 @@
 						<h4>Solution - CERBERE</h4>
 
 						<img class=fragment src="img/diag_before_vault.svg" height=300 />
-						<span style="height: 300px" class=vertical-separator></span>
-						<img class=fragment src="img/diag_after_vault.svg" height=300 />
 
+						<!-- TODO pas oligé de décire pas à pas, c'est légendé -->
 						<aside class="notes">
 							Maintenant que nous avons expliqué la problématique, essayons
 							d'imager plus concrètement le problème.
-							<br>
-							<br>
-							Ici nous avons 3 acteurs: une base de donnée qui contient par
-							exemple des informations personnels sur les clients de Cdiscount,
-							une serveur applicatif qui à besoin d'accéder à ces données
-							sensibles pour afficher une page de profil, et un poste opérateur
-							qui se charge de maintenir le système en état de fonctionner.
-							Les flèches oranges représentent le trajet du secret et montrent que
-							lorsqu'il initialise la base de donnée, l'opérateur génère un mot
-							de passe qui lui permettra d'accéder si besoin au contenu de la
-							base pour résoudre un éventuel incident. Il doit également générer
-							un compte de service qui permettra au serveur applicatif de
-							réaliser des requêtes vers la base de donnée.
-							<br>
-							<br>
+							<br><br>
+							Avant, lorsqu'il initialisait une base de donnée, un opérateur
+							génèrait un mot de passe qui lui permettra d'accéder si besoin au
+							contenu de la base pour résoudre un éventuel incident. Il doit
+							également générer un compte de service qui permettra au serveur
+							applicatif de réaliser des requêtes vers la base de donnée.
+							<br><br>
 							Comme le montre le schéma, on se retrouve avec deux secrets
-							(parfois les même) qui se retrouvent dispercé dans le système d'information et
-							stockés sur des supports qui ne n'ont pas pour rôle originel
-							d'abriter des secrets sensibles et que l'on peu donc considérer
-							comme particulièrement vulnérables. Cela pose un grand nombre de
-							problèmes qui sont plus amplement détaillés dans le mémoire.
-							<br>
-							<br>
+							(parfois les même) qui sont alors dispercé dans le système
+							d'information et stockés sur des supports qui ne n'ont pas pour
+							rôle originel d'abriter des secrets sensibles. On peut donc
+							considérer ces supports (le poste opérateur et le serveur
+							applicatif comme particulièrement vulnérables. Cela pose un grand
+							nombre de problèmes qui sont plus amplement détaillés dans le
+							mémoire.
 							Voyons rapidement comment le projet de gestion des Secrets interne
 							de Cdiscount (nom de code CERBERE) compte minimiser la dispertion
 							des secrets dans le système d'information.
-
-							Image de la solution à droite
-							fleches et secret toujours indiqués
-							cette fois le secret est toujours à un endroit unique
-							le secret peut être changé quand on veut et automatiquement
-							les gens ont juste à s'authentifier à vault
-
 						</aside>
           </section>
 
 
           <section style="text-align: center">
-						<!-- TODO fait une step juste pour l'interaction vault / DB -->
-						<!-- TODO remove configuration -->
-						<!-- TODO add token -->
+						<!-- TODO ajouter en petit coffre for et server auth icon des technos -->
+						<!-- TODO introduit keycloak et vault ici -->
+						<!-- TODO dire que les rubant c'est des token -->
 						<div class="animation-parent">
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_0.svg" height=500 />
 							</div>
-							<div class="animation-child fragment fade-in-then-out"
-									 style="left: -37px">
+							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_1.svg" height=500 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
@@ -250,12 +248,14 @@
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_4.svg" height=500 />
 							</div>
-							<div class="animation-child fragment fade-in-then-out"
-									 style="left: -37px">
+							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_5.svg" height=500 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_6.svg" height=500 />
+							</div>
+							<div class="animation-child fragment fade-in-then-out">
+								<img src="img/diag_after_vault_7.svg" height=500 />
 							</div>
 						</div>
 
@@ -269,10 +269,10 @@
 							Pour initialiser son système, l'opérateur doit toujours générer un
 							mot de passe mais qu'il va cette fois ci remettre au coffre fort.
 							<br><br>
-							Une fois le système configuré, le coffre fort sera en mesure lui même de
-							prendre en compte le renouvellement de la clef de sécurité auprès
-							de la base de donnée sans qu'une action d'un opérateur ne soit
-							nécessaire.
+							Une fois le système configuré, le coffre fort sera en mesure lui
+							même de prendre en compte le renouvellement de la clef de sécurité
+							auprès de la base de donnée sans qu'une action d'un opérateur ne
+							soit nécessaire.
 							Voyons comment notre opérateur ou notre serveur applicatif devra
 							procéder pour accéder à la base de donnée avec le projet CERBERE.
 							<br><br>
@@ -294,26 +294,27 @@
           </section>
 
 
+					<!--
           <section>
 						<h4>Methodes de développement</h4>
 
 						<img src="img/scrum.svg" height=200 />
+
+						<aside class="notes">
 							C'est donc la mise en place de ce projet CERBERE que le mémoire
 							exposait. On y voyait également comment une équipe plutôt orienté
 							sur l'infrastrucutre s'était inspiré des méthodes de développement
 							agiles pour construire un plan de management au service de la
 							sécurité.
-						<aside class="notes">
-							
 						</aside>
           </section>
+					-->
 
         </section>
 
 
 				<section>
-					<h3>Problématique</h3>
-					<!-- TODO -->
+					<h3>Problématique de la soutenance</h3>
 
 					<blockquote class=fragment>
 						&ldquo; Comment les pratiques et technologies <strong
@@ -332,10 +333,16 @@
 					-->
 
 					<aside class=notes>
+						Dans le mémoire nous avons donc répondu à la problématique en
+						avancant que pour éviter la fuite des secrets sensibles d'une grande
+						entreprise et ainsi limiter son exposition aux cyberattaques, il
+						faut mettre en place un projet de gestion des secrets articulé
+						autour d'un coffre fort numérique.
+						<br><br>
 						Cependant, ce mémoire peut être complété et d'autre pistes de
 						réponses peuvent être apportés. Pour le reste de ce mémoire, nous
 						allons nous concentrer sur une problématique plus restreinte.
-						<br><br>
+						<br>SLIDE<br>
 						Cette problématique va nous permettre de parler de quelques éléments
 						qui me semble très importants pour le développement d'un projet de
 						sécurité informatique.
@@ -351,7 +358,7 @@
 						<ol>
 							<li>Infrastructure As Code</li>
 							<li>Tests Automatisés</li>
-							<li>Intégration Continu</li>
+							<li>Intégration Continue</li>
 							<li>Approche Produit</li>
 						</ol>
 
@@ -361,8 +368,8 @@
 							l'intégration continu et l'approche produit pour développer une
 							plateforme de sécurité selon les principes SRE.
 							<br><br>
-							Avant d'entrer au coeur de cette soutenance, faisont le point sur
-							la définition même de SRE
+							Avant d'entrer au coeur de cette soutenance, faisons le point sur
+							la définition même de SRE.
 						</aside>
 					</section>
 
@@ -388,6 +395,8 @@
 							<span style="margin: 15px 50px" class=vertical-separator></span>
 						</span>
 						<img class=fragment src="img/devellopper_activity.svg" width=200 />
+
+						<!-- TODO devops = agilité + sécurité -->
 
 						<aside class="notes">
 							SRE c'est l'acronyme de .... qui se traduit en français par
@@ -481,6 +490,7 @@
 
 					<section>
 						<h5>Concept</h5>
+						<!-- TODO concepts en une phrase -->
 
 						<img class=fragment src="img/server_cluster.svg" width=200 />
 						<span class=vertical-separator></span>
@@ -510,6 +520,7 @@
 
 					<section>
 						<h5>Fonctionnement</h5>
+						<!-- TODO donner un exemple et simplifier -->
 
 						<img src="img/diag_ansible.svg" height=400 />
 
@@ -531,27 +542,7 @@
 
 
 					<section>
-						<h5>Jack</h5>
-
-						<img src="img/screen_jack.png" width=700 />
-
-						<aside class="notes">
-							Pour la première activité, c'est un outil interne, Jack qui nous
-							à aidé. Ce gestionnaire d'inventaire permet de définir sous forme
-							d'arbre une infrastructure et de l'exporter ensuite dans un format
-							compatible avec Ansible. On voit sur l'image que le projet cerbere
-							contient une branche pour keycloak et une branche (secrets pour
-							vault). Grâce à sa vue sous forme d'arbre, jack permet de définir
-							des groupes. Par exemple, nous voyons un groupe pour chaque
-							datacenter, un groupe pour les serveurs vault et un groupe pour
-							les serveurs de fragment. On peut donc accéder par exemple à tout
-							les serveurs de fragments de bordeaux en prenant l'intersection
-							des ensembles dc1 et fragments.
-						</aside>
-					</section>
-
-
-					<section>
+						<!-- TODO expliquer que dc = datacenter -->
 						<h5>Inventaire</h5>
 
 						<pre><code class="yaml"
@@ -661,6 +652,9 @@
 					<section>
 						<h5>Répartition des rôles</h5>
 						<!-- TODO expliciter instance vault, trop éclaté -->
+						<!-- TODO mettre de la légende -->
+						<!-- TODO travailler vraiment cette slide -->
+						<!-- TODO dans la légende écrire avant roles ansible -->
 
 						<div class="animation-parent" style="width: 700px">
 							<div class="animation-child fragment fade-in-then-out">
@@ -745,6 +739,7 @@
 					</section>
 
 
+					<!--
 					<section>
 						<h5>Architecture du code</h5>
 
@@ -753,6 +748,7 @@
 						<aside class="notes">
 						</aside>
 					</section>
+					-->
 
 				</section>
 
@@ -816,6 +812,7 @@
 					</section>
 
 
+					<!--
 					<section>
 						<h5>Architecture du code</h5>
 
@@ -831,13 +828,16 @@
 						</div>
 						-->
 
+						<!--
 						<aside class="notes">
 							on ajoute des répertoires
 						</aside>
 					</section>
+						-->
 
 
 					<section>
+						<!-- TODO create et converge à beaucoup plus simplifier -->
 						<h5>Create</h5>
 
 						<pre><code class="ansible"
@@ -886,6 +886,7 @@
 
 					<section>
 						<h5>Converge</h5>
+						<!-- TODO + concis -->
 
 						<pre><code class="ansible"
 											 data-trim
@@ -1008,6 +1009,9 @@
 					<section>
 						<h5>Pipeline</h5>
 
+						<!-- TODO simplifier -->
+						<!-- TODO on pourra revenir plus tard dessus -->
+
 						<img src="img/diag_pipline.svg" width=600 />
 
 						<aside class="notes">
@@ -1017,7 +1021,8 @@
 
 
 					<section>
-						<h5>Architecture du code</h5>
+						<h5>Architecture des sous-modules</h5>
+						<!-- TODO expliquer que ça permet les tests unitaire -->
 
 						<img src="img/diag_code_arch_submodules.svg" width=800 />
 
@@ -1112,7 +1117,10 @@
 					<section>
 						<h5>Architecture du code</h5>
 
-						<!--TODO ajouter légendes partout -->
+						<!-- TODO ajouter légendes partout -->
+						<!-- TODO folder => directory -->
+						<!-- TODO mettre en standby -->
+						<!-- TODO merge avec celle d'avant -->
 						<img src="img/diag_code_arch_product.svg" height=500 />
 
 						<aside class="notes">
@@ -1124,161 +1132,72 @@
 				</section>
 
 
-				<!-- PART 2
-				<section>
-					<h3>Sécurité du dévellopement nomade</h3>
-					<ol>
-						<li>Sécurité des supports</li>
-						<li>Sécurité des échanges</li>
-						<li>Sécurité du développement</li>
-					</ol>
-
-					<aside class="notes">
-						covid à forcé à externaliser le développement
-						1. chiffrement des disques
-						2. VPN + mails chiffrés
-						3. git++
-					</aside>
-				</section>
-
-
-				<section>
-
-					<section>
-						<h4 style="color: #e13b13">Sécurité des supports</h4>
-
-						<aside class="notes">
-							2 types de supports :
-							logiciels et materiels
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Supports logiciels</h5>
-
-						<img src="img/confluence.png" height="150" />
-						<span class=vertical-separator></span>
-						<img src="img/jira.png" height="150" />
-						<span class=vertical-separator></span>
-						<img src="img/gitbucket.png" height="150" />
-
-						<aside class="notes">
-							confluence
-							jira
-							gitbucket
-							approche produit : ouvert à l'implementation et fermé à la
-							modification
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Supports materiels</h5>
-						<br>
-
-						<div class=layer>
-							<p>Système d'exploitation</p>
-						</div>
-						<div class=layer>
-							<p>Système de fichier</p>
-						</div>
-						<div class=layer-luks>
-							<img src="img/luks.png" height="100" />
-						</div>
-						<div class=layer>
-							<p>Disque</p>
-						</div>
-
-						<aside class="notes">
-							comme vault, les disques des machines sont chiffrés
-						</aside>
-					</section>
-
-				</section>
-
-
-				<section>
-
-					<section>
-						<h4 style="color: #e13b13">Sécurité des échanges</h4>
-
-						<aside class="notes">
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Sécurité superficielle</h5>
-
-						<p style="color: green">TODO : add screens</p>
-
-						<aside class="notes">
-							utilisation de vpn
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Sécurité en profondeur</h5>
-
-						<p style="color: green">TODO : add screens</p>
-
-						<aside class="notes">
-							mails chiffrés
-						</aside>
-					</section>
-
-				</section>
-
-
-				<section>
-
-					<section>
-						<h4 style="color: #e13b13">Sécurité des processus</h4>
-
-						<aside class="notes">
-							- Processus de Développement
-							- Processus de Déploiement
-							outil de control de version déjà utile de base mais indispensable
-							dans ces conditions
-							on va voir que SRE aide grandement cette partie
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Processus de développement</h5>
-
-						<p style="color: green">TODO : add scheme</p>
-						<p style="color: green">TODO : add asciiart</p>
-
-						<aside class="notes">
-							utilisation des branches git (#SRE)
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Processus de Déploiement</h5>
-
-						<p style="color: green">TODO : add scheme</p>
-
-						<aside class="notes">
-							inspiration ITIL => changes
-							utilisation de la CICD va améliorer ça
-						</aside>
-					</section>
-
-				</section>
-				-->
-
  
 				<!-- CONCLUSION -->
 				<section>
 					<h3>Conclusion</h3>
 
+					<!-- TODO on à vu que infra => code => tset => cicd => approche produit -->
 					<aside class="notes">
+						qu'es ce que l'entreprise m'a apporter
+						<br>
+						les suites
+						<br>
+						ouverture sur spé 6 toujours chez cdiscount
+					</aside>
+				</section>
+
+				<section>
+					<h1>?</h1>
+				</section>
+
+				<!--------------------------------------------------------------------->
+
+				<section>
+					<h2>Annexes</h2>
+				</section>
+
+
+				<section>
+					<h3>Supports materiels</h3>
+					<br>
+
+					<div class=layer>
+						<p>Système d'exploitation</p>
+					</div>
+					<div class=layer>
+						<p>Système de fichier</p>
+					</div>
+					<div class=layer-luks>
+						<img src="img/luks.png" height="100" />
+					</div>
+					<div class=layer>
+						<p>Disque</p>
+					</div>
+
+					<aside class="notes">
+						comme vault, les disques des machines sont chiffrés
+					</aside>
+				</section>
+
+
+				<section>
+					<h3>Jack</h3>
+
+					<img src="img/screen_jack.png" width=700 />
+
+					<aside class="notes">
+						Pour la première activité, c'est un outil interne, Jack qui nous
+						à aidé. Ce gestionnaire d'inventaire permet de définir sous forme
+						d'arbre une infrastructure et de l'exporter ensuite dans un format
+						compatible avec Ansible. On voit sur l'image que le projet cerbere
+						contient une branche pour keycloak et une branche (secrets pour
+						vault). Grâce à sa vue sous forme d'arbre, jack permet de définir
+						des groupes. Par exemple, nous voyons un groupe pour chaque
+						datacenter, un groupe pour les serveurs vault et un groupe pour
+						les serveurs de fragment. On peut donc accéder par exemple à tout
+						les serveurs de fragments de bordeaux en prenant l'intersection
+						des ensembles dc1 et fragments.
 					</aside>
 				</section>
 
