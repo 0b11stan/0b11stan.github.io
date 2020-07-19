@@ -25,47 +25,24 @@
           </h2>
 
           <aside class="notes">
-						Bonjour, je m'appel Tristan Pinaudeau, je suis alternant en 5ème
-						année de l'EPSI Bordeaux et ingénieur SRE Junior à Cdiscount. Durant
-						les 20 prochaines minutes, je vais vous soutenir le mémoire dont
-						vous voyez l'intitulé : "La protection des actifs grâce à une bonne
-						gestion du secret" Nous allons parler de sécurité bien sur mais
-						aussi de DevOps, de virtualisation et de pratiques de développement.
-						L'intéret de cette présentation est d'étendre le mémoire pour
-						présenter un nouvel aspect du sujet qui n'a pas encore été traitée.
-						Après un rapide rappel des éléments clef du projet CERBERE qui est
-						exposé dans le mémoire, nous poserons une nouvelle problématique qui
-						n'est qu'un sous-ensemble de celle qui s'affiche devant vous. Nous
-						développerons alors 2 parties qui tenterons de répondre à cette
-						question spécifique pour conclure sur une synthèse qui replacera les
-						éléments aportés dans le cadre d'origine de ce mémoire.
-
-						POURQUOI CHOISI SRE ?
-						MONTRER AVEC POINTEUR
-						EXPLIQUER BEAUCOUP
-						RÉSUMÉ DE L'ALTERNANCE
+						<ul>
+							<li>Tristan Pinaudeau</li>
+							<li>alternant en 5ème année de l'EPSI Bordeaux</li>
+							<li>ingénieur SRE junior à Cdiscount</li>
+							<li>mission : développement du coffre fort en autonomie</li>
+							<li>parle de : SECU - DEVOPS - VIRTUALISATION - PRATIQUES DEV</li>
+							<li>objectif : étendre mémoire pour présenter nouvel aspect</li>
+							<li>plan : rappel - new problématique - developpement 4 part</li>
+							<li>plan : conclusion - questions</li>
+						</ul>
           </aside>
         </section>
-
-
-				<section>
-
-					<ol>
-						<li>Rappels</li>
-						<li>Problématique</li>
-						<li>S.R.E = Security</li>
-					</ol>
-
-					<aside class="notes">
-					</aside>
-				</section>
 
 
 				<!-- RAPPELS -->
 				<section>
 
           <section>
-						<!-- TODO racourcir rappel -->
 						<h3>Rappels du mémoire</h3>
 						<p style="color: #444">( TL ; DR )</p>
 
@@ -84,14 +61,6 @@
 							aux cyberattaques de ses actifs et de son image en évitant la
 							fuite de ses secrets sensibles ? &rdquo;
 						</blockquote>
-
-						<aside class="notes">
-							D'abord, rappelons la problématique.
-							...lire...
-							Dans les prochaines slides je vais découper cette problématique
-							en plusieurs sous parties pour entrer progressivement dans le
-							sujet
-						</aside>
           </section>
 
 
@@ -104,14 +73,15 @@
 						<img src="img/cdiscount.png" height="300" />
 
 						<aside class="notes">
-							Cette large entreprise qui compte plusieur dizaines d'équipes
-							c'est Cdiscount. Le leader francais du commerce électronique à été le sujet d'experimentation de ce
-							mémoire. J'ai pu y entreprendre en autonomie et à temps plein la 
-							mise en place d'un projet de gestion des secrets. L'équipe qui m'a
-							acceuilli pour cette tâche est la CT-Intégration. Une équipe
-							polyvalente et talentueuse d'une petite dizaine de personnes qui
-							travaillent à l'intégration de plateformes de sécurité et de
-							messaging au sein de Cdiscount et en utilisant les méthodes DevOps
+							<ul>
+								<li>= Cdiscount</li>
+								<li>leader français du commerce électronique</li>
+								<li>sujet d'expérimentation du mémoire</li>
+								<li>CT-Integ = polyvalente et talentueuse</li>
+								<li>CT-Integ = dizaine de personnes</li>
+								<li>CT-Integ = intégration plateformes de sec et messaging</li>
+								<li>CT-Integ = DevOps et SRE</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -124,17 +94,15 @@
 						<img src="img/teams_spirit.svg" height="200" />
 
 						<aside class="notes">
-							Ensuite, la problématique parle de méthodes et cultures diverses.
-							Cette constatation peut être faite dans toutes les entreprises:
-							des équipes différentes ont des approches différentes pour
-							résoudre le même problème. C'est souvent un point positif qui à
-							tendance à encourager l'innovation et la création de valeur.
-							Pourtant, dans le cadre des problèmes de sécurité, cette
-							hétérogénéité des pratiques rend très difficile le Management de
-							la sécurité des systèmes d'information si cher à ISO 27001.
-							Il nous faut donc une solution qui arrive à embrasser la pluralité
-							des cultures d'équipes tout en permettant une unification de la
-							gestion des secrets.
+							<ul>
+								<li>équipes !=, approches != même problème</li>
+								<li>point positif : innovation et création de valeur</li>
+								<li>pourtant - pour sécurité</li>
+								<li>hétérogénéité des pratiques = SMSI, ISO 27001</li>
+								<li>besoin : une solution qui embrasse pluralité des cultures
+								d'équipes tout en permettant une unification de la gestion des
+								secrets</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -164,15 +132,12 @@
 						<img class=fragment src=img/social_dashboard.svg height=150 />
 
 						<aside class="notes">
-							Par la, ce que veux protéger à tout prix une entreprise du secteur
-							du commerce en ligne c'est biensure ses actifs mais aussi et
-							surtout son image. Depuis les révélations d'edward snowden il y à
-							quelques année et plus récemment la mise en place du RGPD en
-							europe, l'opinion publique est de plus en plus sensible à la
-							sécurité de ses donnée privée. La sécurité est donc une contraine
-							pour Cdiscount mais également un potentiel argument marketing face
-							aux géant étrangés qui sont déja largement été critiqués sur ce
-							sujet.
+							<ul>
+								<li>actifs mais aussi et surtout image</li>
+								<li>depuis edward snowden + RGPD : opinion pub + sensible</li>
+								<li>donc sécu = contrainte</li>
+								<li>mais aussi argument marketing face aux GAFAM</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -202,36 +167,23 @@
 
 						<img class=fragment src="img/diag_before_vault.svg" height=300 />
 
-						<!-- TODO pas oligé de décire pas à pas, c'est légendé -->
 						<aside class="notes">
-							Maintenant que nous avons expliqué la problématique, essayons
-							d'imager plus concrètement le problème.
-							<br><br>
-							Avant, lorsqu'il initialisait une base de donnée, un opérateur
-							génèrait un mot de passe qui lui permettra d'accéder si besoin au
-							contenu de la base pour résoudre un éventuel incident. Il doit
-							également générer un compte de service qui permettra au serveur
-							applicatif de réaliser des requêtes vers la base de donnée.
-							<br><br>
-							Comme le montre le schéma, on se retrouve avec deux secrets
-							(parfois les même) qui sont alors dispercé dans le système
-							d'information et stockés sur des supports qui ne n'ont pas pour
-							rôle originel d'abriter des secrets sensibles. On peut donc
-							considérer ces supports (le poste opérateur et le serveur
-							applicatif comme particulièrement vulnérables. Cela pose un grand
-							nombre de problèmes qui sont plus amplement détaillés dans le
-							mémoire.
-							Voyons rapidement comment le projet de gestion des Secrets interne
-							de Cdiscount (nom de code CERBERE) compte minimiser la dispertion
-							des secrets dans le système d'information.
+							<ul>
+								<li>imagons problème concrètement</li>
+								<li>opérateur génère password et initialise DB</li>
+								<li>donne le password au serveur applicatif</li>
+								<li>garde le password pour maintenance</li>
+								<li>problème : mdp dupliqué et dispercé dans le SI</li>
+								<li>support de stockages pas du tout spécialisé</li>
+								<li>donc plutôt vulnérables</li>
+								<li>pose plein de pb expliqué dans le mémoire</li>
+								<li>voyons comment CERBERE règle le pb</li>
+							</ul>
 						</aside>
           </section>
 
 
           <section style="text-align: center">
-						<!-- TODO ajouter en petit coffre for et server auth icon des technos -->
-						<!-- TODO introduit keycloak et vault ici -->
-						<!-- TODO dire que les rubant c'est des token -->
 						<div class="animation-parent">
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_after_vault_0.svg" height=500 />
@@ -260,55 +212,27 @@
 						</div>
 
 						<aside class="notes">
-							Nous voila à nouveau avec nos trois même acteurs, le poste
-							opérateur, la base de donnée et le serveur applicatif. CERBERE
-							introduit deux composant supplémentaire. Le V majuscule représente
-							un coffre fort numérique (vault en anglais) et le A majuscule
-							représente un serveur d'authentification.
-							<br><br>
-							Pour initialiser son système, l'opérateur doit toujours générer un
-							mot de passe mais qu'il va cette fois ci remettre au coffre fort.
-							<br><br>
-							Une fois le système configuré, le coffre fort sera en mesure lui
-							même de prendre en compte le renouvellement de la clef de sécurité
-							auprès de la base de donnée sans qu'une action d'un opérateur ne
-							soit nécessaire.
-							Voyons comment notre opérateur ou notre serveur applicatif devra
-							procéder pour accéder à la base de donnée avec le projet CERBERE.
-							<br><br>
-							D'abord, il devra s'adresser à un serveur d'authentification qui
-							s'assurera de l'identité de notre acteur
-							<br><br>
-							et lui fournira un jeton d'authentification limité dans le temps
-							et seulement valide pour un périmettre restreint.
-							<br><br>
-							Equipé de ce jeton, notre acteur pourra montrer patte blanche
-							aupré du coffre fort
-							<br><br>
-							qui lui remettra la clef d'accès à la base.
-							<br><br>
-							Une fois utilisé, notre acteur n'a plus besoin de conserver le
-							secret qui, de toute façon serait bientôt renouvelé par le coffre
+							<ul>
+								<li>3 même acteurs</li>
+								<li>2 nouveaux composants introduits par CERBERE</li>
+								<li>server auth (explain)</li>
+								<li>server vault (explain)</li>
+								<li>server vault (explain)</li>
+								<li>...</li>
+								<li>
+									token : chaine de caractère qui permet d'indentifier et
+									d'authentifier son porteur
+								</li>
+								<li>limité dans le temps et les permissions</li>
+								<li>...</li>
+								<li>
+									une fois utilisé plus besoin de conserver le secret qui sera
+									bientôt renouvelé par le coffre
+								</li>
+							</ul>
 							fort.
 						</aside>
           </section>
-
-
-					<!--
-          <section>
-						<h4>Methodes de développement</h4>
-
-						<img src="img/scrum.svg" height=200 />
-
-						<aside class="notes">
-							C'est donc la mise en place de ce projet CERBERE que le mémoire
-							exposait. On y voyait également comment une équipe plutôt orienté
-							sur l'infrastrucutre s'était inspiré des méthodes de développement
-							agiles pour construire un plan de management au service de la
-							sécurité.
-						</aside>
-          </section>
-					-->
 
         </section>
 
@@ -322,30 +246,22 @@
 						sain et sécurisé nécessaire au déploiement d'une plateforme de
 						<strong class=stand-out>coffre-fort numérique</strong> ?&rdquo;
 					</blockquote>
-					<!--
-					<blockquote class=fragment>
-						&ldquo; Quelles <strong class=stand-out>pratiques de développement
-						</strong> et <strong class=stand-out>solutions techniques</strong>
-						permettent d'apporter un cadre sain et sécurisé nécessaire au
-						déploiement d'une plateforme de <strong class=stand-out>coffre-fort
-						numérique</strong> ?&rdquo;
-					</blockquote>
-					-->
 
 					<aside class=notes>
-						Dans le mémoire nous avons donc répondu à la problématique en
-						avancant que pour éviter la fuite des secrets sensibles d'une grande
-						entreprise et ainsi limiter son exposition aux cyberattaques, il
-						faut mettre en place un projet de gestion des secrets articulé
-						autour d'un coffre fort numérique.
-						<br><br>
-						Cependant, ce mémoire peut être complété et d'autre pistes de
-						réponses peuvent être apportés. Pour le reste de ce mémoire, nous
-						allons nous concentrer sur une problématique plus restreinte.
-						<br>SLIDE<br>
-						Cette problématique va nous permettre de parler de quelques éléments
-						qui me semble très importants pour le développement d'un projet de
-						sécurité informatique.
+						<ul>
+							<li>
+								réponse mémoire : mise en place d'un projet de gestion des
+								secrets articulé autour d'un coffre fort numérique
+							</li>
+							<li>
+								évite la fuite des secrets sensibles et ainsi limiter l'
+								exposition aux cyberattaques d'une grande entreprise
+							</li>
+							<li>mémoire peut être complété - autres pistes de réponse</li>
+							<li>on se concentre donc sur problématique plus restreinte</li>
+							<li>SLIDE</li>
+							<li>permet de parler d'élément cool pour dev de projet secu</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -396,8 +312,6 @@
 						</span>
 						<img class=fragment src="img/devellopper_activity.svg" width=200 />
 
-						<!-- TODO devops = agilité + sécurité -->
-
 						<aside class="notes">
 							SRE c'est l'acronyme de .... qui se traduit en français par
 							"Science de la fiabilité". C'est une méthode issue des équipes
@@ -427,17 +341,17 @@
 							<tbody>
 								<tr>
 									<th>OPS</th>
-									<td>Sécurité</td>
-									<td>Lourdeur</td>
+									<td><span class=color-good>Sécurité</span></td>
+									<td><span class=color-bad>Lourdeur</span></td>
 								</tr>
 								<tr>
 									<th>DEV</th>
-									<td>Agilité</td>
-									<td>Sécurité</td>
+									<td><span class=color-good>Agilité</span></td>
+									<td><span class=color-bad>Sécurité</span></td>
 								</tr>
 							</tbody>
 						</table>
-
+						
 						<aside class="notes">
 							En fait ils se sont rendu compte qu'ils avaient deux profile
 							complémentaires aux cultures extrêmement différentes dans
@@ -467,6 +381,10 @@
 						</aside>
 					</section>
 
+					<section>
+						DevOps = <span class=color-good>Sécurité</span> + <span class=color-good>Agilité</span>
+					</section>
+
 				</section>
 
 
@@ -490,7 +408,6 @@
 
 					<section>
 						<h5>Concept</h5>
-						<!-- TODO concepts en une phrase -->
 
 						<img class=fragment src="img/server_cluster.svg" width=200 />
 						<span class=vertical-separator></span>
@@ -504,11 +421,10 @@
 					</section>
 
 
-					<section data-background="#444">
+					<section>
 						<h5>Technologie</h5>
 
-						<!-- TODO rond autour d'ansible -->
-						<img src="img/ansible.png" height=200 />
+						<img src="img/ansible.png" height=400 />
 
 						<aside class="notes">
 							De nombreux outils permettent l'infrastructure as code mais c'est
@@ -520,29 +436,23 @@
 
 					<section>
 						<h5>Fonctionnement</h5>
-						<!-- TODO donner un exemple et simplifier -->
 
 						<img src="img/diag_ansible.svg" height=400 />
 
 						<aside class="notes">
-							Ansible permet de définir l'infrastructure sous forme d'un
-							ensemble de fichier au format yaml qu'on appel une recette. L'un
-							d'eux contient un inventaire des machines ciblés par la recette,
-							les autres sont un enchainement de tâches à appliqués qui peuvent
-							être soumises à des conditions en fonction de variables d'entée.
-							Ces tâches sont répartis dans des rôles qu'on appliques alors aux
-							machines de l'inventaire.
+							<ul>
+								<li>exemple : install web server sur machines vierges</li>
+								<li>inventaires (explain)</li>
+								<li>tasks = état (explain)</li>
+								<li>rôles c'est quoi</li>
+								<li>deux activités : écrire tâches, définir inventaire</li>
+							</ul>
 							<br><br>
-							On à donc fondamentalement deux activité importantes quand on fait
-							de l'infrastructure as code: définir un inventaire et développer
-							le code ansible qui est une déscription précise de l'état dans
-							lequel chaque machine doit se trouver à l'execution de la recette.
 						</aside>
 					</section>
 
 
 					<section>
-						<!-- TODO expliquer que dc = datacenter -->
 						<h5>Inventaire</h5>
 
 						<pre><code class="yaml"
@@ -635,15 +545,11 @@
 													aa08srvcervt006.cdweb.biz: {}
 									ungrouped: {}
 						</code></pre>
-
-						<aside class="notes">
-						</aside>
 					</section>
 
 
-					<section>
+					<section data-transition=zoom>
 						<h5>Architecture de la solution</h5>
-						<!-- TODO transition en zoom -->
 
 						<img src="img/diag_vault_platform.svg" width=1000 />
 					</section>
@@ -651,40 +557,32 @@
 
 					<section>
 						<h5>Répartition des rôles</h5>
-						<!-- TODO expliciter instance vault, trop éclaté -->
-						<!-- TODO mettre de la légende -->
-						<!-- TODO travailler vraiment cette slide -->
-						<!-- TODO dans la légende écrire avant roles ansible -->
 
 						<div class="animation-parent" style="width: 700px">
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_0.svg" width=700 />
+								<img src="img/diag_vault_instance_0.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_1.svg" width=700 />
+								<img src="img/diag_vault_instance_1.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_2.svg" width=700 />
+								<img src="img/diag_vault_instance_2.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_3.svg" width=700 />
+								<img src="img/diag_vault_instance_3.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_4.svg" width=700 />
+								<img src="img/diag_vault_instance_4.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_5.svg" width=700 />
+								<img src="img/diag_vault_instance_5.svg" width=800 />
 							</div>
 							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_vault_instance_6.svg" width=700 />
+								<img src="img/diag_vault_instance_6.svg" width=800 />
 							</div>
 						</div>
 
 						<aside class="notes">
-							Rappelons rapidement l'architecture que l'on avait décrit dans
-							vault. La plateforme est répartie sur 2 datacenter et des
-							serveurs de fragments doivent nous permettre de dévérouiller le
-							coffre fort
 						</aside>
 					</section>
 
@@ -740,14 +638,6 @@
 
 
 					<!--
-					<section>
-						<h5>Architecture du code</h5>
-
-						<img src="img/diag_code_arch.svg" width=700 />
-
-						<aside class="notes">
-						</aside>
-					</section>
 					-->
 
 				</section>
@@ -774,6 +664,9 @@
 						<img src="img/online_test.svg" width=400 />
 
 						<aside class="notes">
+							<ul>
+								<li>etapes fondamentales : arrange - act - assert</li>
+							</ul>
 							Dans le monde opérationnel, nous sommes déjà habitué aux
 
 							- tests de PRA
@@ -812,33 +705,8 @@
 					</section>
 
 
-					<!--
 					<section>
-						<h5>Architecture du code</h5>
-
-						<img src="img/diag_code_arch_test.svg" width=750 />
-						<!--
-						<div class="animation-parent" style="width: 1000px">
-							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_code_arch.svg" width=600 />
-							</div>
-							<div class="animation-child fragment fade-in-then-out">
-								<img src="img/diag_code_arch_test.svg" width=784 />
-							</div>
-						</div>
-						-->
-
-						<!--
-						<aside class="notes">
-							on ajoute des répertoires
-						</aside>
-					</section>
-						-->
-
-
-					<section>
-						<!-- TODO create et converge à beaucoup plus simplifier -->
-						<h5>Create</h5>
+						<h5>Create - Arrange</h5>
 
 						<pre><code class="ansible"
 											 data-trim
@@ -885,8 +753,7 @@
 
 
 					<section>
-						<h5>Converge</h5>
-						<!-- TODO + concis -->
+						<h5>Converge - Act</h5>
 
 						<pre><code class="ansible"
 											 data-trim
@@ -922,13 +789,12 @@
 							...						</pre></code>
 
 						<aside class="notes">
-							on peut aller encore plus loin
 						</aside>
 					</section>
 
 
 					<section>
-						<h5>Test</h5>
+						<h5>Verify - Assert</h5>
 
 						<pre><code class="ansible"
 											 data-trim
@@ -946,7 +812,6 @@
 					</pre></code>
 
 						<aside class="notes">
-							on peut aller encore plus loin
 						</aside>
 					</section>
 
@@ -1009,25 +874,13 @@
 					<section>
 						<h5>Pipeline</h5>
 
-						<!-- TODO simplifier -->
-						<!-- TODO on pourra revenir plus tard dessus -->
-
 						<img src="img/diag_pipline.svg" width=600 />
 
 						<aside class="notes">
-							BPM
-						</aside>
-					</section>
-
-
-					<section>
-						<h5>Architecture des sous-modules</h5>
-						<!-- TODO expliquer que ça permet les tests unitaire -->
-
-						<img src="img/diag_code_arch_submodules.svg" width=800 />
-
-						<aside class="notes">
-							BPM
+							<ul>
+								<li>exemple de pipeline future pour vault</li>
+								<li>on peu revenir dessus plus tard</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -1117,10 +970,6 @@
 					<section>
 						<h5>Architecture du code</h5>
 
-						<!-- TODO ajouter légendes partout -->
-						<!-- TODO folder => directory -->
-						<!-- TODO mettre en standby -->
-						<!-- TODO merge avec celle d'avant -->
 						<img src="img/diag_code_arch_product.svg" height=500 />
 
 						<aside class="notes">
@@ -1131,19 +980,19 @@
 
 				</section>
 
-
  
 				<!-- CONCLUSION -->
 				<section>
 					<h3>Conclusion</h3>
 
-					<!-- TODO on à vu que infra => code => tset => cicd => approche produit -->
 					<aside class="notes">
-						qu'es ce que l'entreprise m'a apporter
-						<br>
-						les suites
-						<br>
-						ouverture sur spé 6 toujours chez cdiscount
+						<ul>
+							<li>on à vu que : iac - test - cicd - approche produit</li>
+							<li>apporte la qualité nécessaire à projet de sécu</li>
+							<li>sujet soutenance = passion</li>
+							<li>+ grand truc que m'a apporté cdiscount</li>
+							<li>d'ailleur master spé sécu en école d'ingé</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -1198,6 +1047,24 @@
 						les serveurs de fragment. On peut donc accéder par exemple à tout
 						les serveurs de fragments de bordeaux en prenant l'intersection
 						des ensembles dc1 et fragments.
+					</aside>
+				</section>
+
+
+				<section>
+					<h3>Architecture des tests</h3>
+
+					<img src="img/diag_code_arch_test.svg" width=800 />
+				</section>
+
+
+				<section>
+					<h3>Architecture des sous-modules</h3>
+
+					<img src="img/diag_code_arch_submodules.svg" width=800 />
+
+					<aside class="notes">
+						permet tests unitaires
 					</aside>
 				</section>
 

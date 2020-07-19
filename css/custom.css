@@ -17,7 +17,7 @@
 
 .layer {
 	background-color: grey;
-	color: #aaaaaa;
+	color: #f5f5f5;
 	border-radius: 10px;
 }
 
@@ -30,6 +30,10 @@
 .animation-child {
 	position: absolute;
 }
+
+.color-bad { color: lightcoral }
+.color-good { color: lightgreen }
+.white-circle-bg { color: blue }
 
 /** OVERRIDING **/
 

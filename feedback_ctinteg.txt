@@ -1,6 +1,4 @@
 je prend trop de recule sur la réalisation, plus de première personne du sing
-je parle trop vite quand je lis
-c'est cool quand j'explique les conceptes
 je passes trop vite les schémas détaillés
 des termes comme keycloak, ca et raft ne sont pas expliqué
 il faut faire une phrase sur shamir et les serveurs de fragments

@@ -3,6 +3,10 @@
 Ce dépôt contient le diaporama au format javascript qui supportera la soutenance
 du mémoire [vault-thesis](https://git.tic.sh/Cdiscount/vault-thesis).
 
+## Usage
+
+Juste play `make` and go to http://localhost:8000
+
 ## Contenu
 
 Les informations souvantes doivent absolument être contenu dans la présentation
