@@ -26,14 +26,15 @@
 
           <aside class="notes">
 						<ul>
+							<li><i>mouvement pointer</i></li>
 							<li>Tristan Pinaudeau</li>
-							<li>alternant en 5ème année de l'EPSI Bordeaux</li>
-							<li>ingénieur SRE junior à Cdiscount</li>
-							<li>mission : développement du coffre fort en autonomie</li>
-							<li>parle de : SECU - DEVOPS - VIRTUALISATION - PRATIQUES DEV</li>
-							<li>objectif : étendre mémoire pour présenter nouvel aspect</li>
-							<li>plan : rappel - new problématique - developpement 4 part</li>
-							<li>plan : conclusion - questions</li>
+							<li>alternant - 5ème année - EPSI Bordeaux</li>
+							<li>ingénieur SRE junior - Cdiscount</li>
+							<li>mission : dév du coffre fort</li>
+							<li>secu - devops - virtualisation - pratiques dev</li>
+							<li>objectif : étendre mémoire pour nouvel aspect</li>
+							<li>introduit problématique soutenance</li>
+							<li>rapide rappel sur le contenu du mémoire</li>
 						</ul>
           </aside>
         </section>
@@ -74,14 +75,9 @@
 
 						<aside class="notes">
 							<ul>
-								<li>= Cdiscount</li>
+								<li>Cdiscount</li>
 								<li>leader français du commerce électronique</li>
 								<li>sujet d'expérimentation du mémoire</li>
-								<li>###</li>
-								<li>CT-Integ = polyvalente et talentueuse</li>
-								<li>CT-Integ = dizaine de personnes</li>
-								<li>CT-Integ = intégration plateformes de sec et messaging</li>
-								<li>CT-Integ = DevOps et SRE</li>
 							</ul>
 						</aside>
 					</section>
@@ -96,13 +92,15 @@
 
 						<aside class="notes">
 							<ul>
-								<li>équipes !=, approches != même problème</li>
-								<li>point positif : innovation et création de valeur</li>
-								<li>pourtant - pour sécurité</li>
-								<li>hétérogénéité des pratiques = SMSI, ISO 27001</li>
-								<li>besoin : une solution qui embrasse pluralité des cultures
-								d'équipes tout en permettant une unification de la gestion des
-								secrets</li>
+								<li>équipes != ; approches != ; même problème</li>
+								<li>point <strong>+</strong> innovation et création de valeur</li>
+								<li>hétérogènéité moins bien pour sécurité</li>
+								<li>SMSI - ISO 27001</li>
+								<li>
+									besoin : une solution qui embrasse pluralité des cultures
+									d'équipes tout en permettant une unification de la gestion des
+									secrets
+								</li>
 							</ul>
 						</aside>
 					</section>
@@ -136,7 +134,8 @@
 							<!-- TODO mettre en deux phrase -->
 							<ul>
 								<li>actifs mais aussi et surtout image</li>
-								<li>depuis edward snowden + RGPD : opinion pub + sensible</li>
+								<li>image important pour e-commerce</li>
+								<li>edward snowden + le RGPD = opinion pub sensible</li>
 								<li>donc sécu = contrainte</li>
 								<li>mais aussi argument marketing face aux GAFAM</li>
 							</ul>
@@ -154,12 +153,11 @@
 						<img class=fragment src="img/strategic_secret.svg" height=150 />
 
 						<aside class="notes">
-							Il faut donc à tout prix protéger les secrets sensibles, ceux des
-							clients biensure (ex: doonnées banquaires), mais aussi les secrets
-							stratégiques qui sont les moteurs de l'activité de toute
-							entreprise. Parmis ces secrets on retrouve le contenu des bases de
-							données biensure mais aussi le code source et même les rapports
-							des équipes chargé de l'analyse de données.
+							<ul>
+								<li>il faut protéger les secrets sensibles</li>
+								<li>client (ex: données brancaires)</li>
+								<li>strategic (ex: database, code, rapports)</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -167,20 +165,14 @@
           <section>
 						<h4>Solution - CERBERE</h4>
 
-						<img class=fragment src="img/diag_before_vault.svg" height=300 />
+						<img src="img/diag_before_vault.svg" height=300 />
 
 						<aside class="notes">
-							<!-- TODO secret représenté par la clef -->
 							<ul>
-								<li>imagons problème concrètement</li>
-								<li>opérateur génère password et initialise DB</li>
-								<li>donne le password au serveur applicatif</li>
-								<li>garde le password pour maintenance</li>
-								<li>problème : mdp dupliqué et dispercé dans le SI</li>
-								<li>support de stockages pas du tout spécialisé</li>
-								<li>donc plutôt vulnérables</li>
-								<li>pose plein de pb expliqué dans le mémoire</li>
-								<li>voyons comment CERBERE règle le pb</li>
+								<li>place d'un opérateur qui init une db</li>
+								<li>secret accès DB = clef rouge</li>
+								<li>problème : moins révocable</li>
+								<li>problème : support pas spécialisé</li>
 							</ul>
 						</aside>
           </section>
@@ -215,26 +207,32 @@
 						</div>
 
 						<aside class="notes">
-							<!-- TODO pas détailler le token -->
+						  <!-- TODO auth serveur = server d'authentificiation -->
 							<ul>
 								<li>3 même acteurs</li>
+								<li>keycloak</li>
+								<ul>
+									<li>authentification</li>
+									<li>open source</li>
+									<li>red hat</li>
+								</ul>
+								<li>vault</li>
+								<ul>
+									<li>coffre fort</li>
+									<li>open source</li>
+									<li>hashicorp</li>
+								</ul>
 								<li>2 nouveaux composants introduits par CERBERE</li>
 								<li>server auth (explain)</li>
 								<li>server vault (explain)</li>
-								<li>server vault (explain)</li>
 								<li>...</li>
-								<li>
-									token : chaine de caractère qui permet d'indentifier et
-									d'authentifier son porteur
-								</li>
-								<li>limité dans le temps et les permissions</li>
+								<li>jeton : limité en temps et permissions</li>
 								<li>...</li>
 								<li>
 									une fois utilisé plus besoin de conserver le secret qui sera
 									bientôt renouvelé par le coffre
 								</li>
 							</ul>
-							fort.
 						</aside>
           </section>
 
@@ -252,7 +250,6 @@
 					</blockquote>
 
 					<aside class=notes>
-						<!-- TODO limiter de la -->
 						<ul>
 							<li>
 								réponse mémoire : mise en place d'un projet de gestion des
@@ -262,9 +259,7 @@
 								évite la fuite des secrets sensibles et ainsi limiter l'
 								exposition aux cyberattaques d'une grande entreprise
 							</li>
-							<li>mémoire peut être complété - autres pistes de réponse</li>
-							<li>on se concentre donc sur problématique plus restreinte</li>
-						<!-- TODO à de la -->
+							<li>complété - autres pistes de réponse</li>
 							<li>SLIDE</li>
 							<li>permet de parler d'élément cool pour dev de projet secu</li>
 						</ul>
@@ -285,8 +280,8 @@
 						</ol>
 
 						<aside class="notes">
-							Nous verrons comment ce projet utilise ou souhaite utiliser les
-							conceptes comme l'infrastrucutre as code, les tests automatisé,
+							Nous allons voir comment ce projet utilise ou souhaite utiliser
+							les conceptes comme l'infrastrucutre as code, les tests automatisé
 							l'intégration continu et l'approche produit pour développer une
 							plateforme de sécurité selon les principes SRE.
 							<br><br>
@@ -319,18 +314,18 @@
 						<img class=fragment src="img/devellopper_activity.svg" width=200 />
 
 						<aside class="notes">
-							SRE c'est l'acronyme de .... qui se traduit en français par
-							"Science de la fiabilité". C'est une méthode issue des équipes
-							expérimentales de Google qui est très ancrée dans les pratiques
-							DevOps.
-							<br><br>
-							Un jour, les ingénieurs de google se sont dis: "et si je donnais
-							la responsabilité de quelque chose d'aussi serieux que mes
-							serveurs de production 
-							<br><br>
-							à des gens aussi superficiels que des développeurs".
-							<br><br>
-							Mais comment en sont t'il arrivé la ?
+							<ul>
+								<li>acronyme</li>
+								<li>français : "Science de la fiabilité"</li>
+								<li>équipes expérimentales de Google</li>
+								<li>ancré dans pratiques DevOps</li>
+								<li>
+									ingénieurs google ? "et si je donnais la responsabilité de
+									quelque chose d'aussi serieux que mes serveurs de production à
+									des gens aussi superficiels que des développeurs"
+								</li>
+								<li>Comment ?</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -359,37 +354,39 @@
 						</table>
 						
 						<aside class="notes">
-							<!-- TODO positif positif négatif négatif -->
-							En fait ils se sont rendu compte qu'ils avaient deux profile
-							complémentaires aux cultures extrêmement différentes dans
-							l'entreprise
-							<br><br>
-							D'un côté des équipes opérationnels très rigoureuses appliquaient
-							des processus de management très rigides pour assurer une
-							sécurité optimale. Cependant le grand nombre de processus et la
-							grand responsabilité qui pesait sur eux était la cause de plus en
-							plus de lenteurs, de coûts financiers et d'une dégradation des
-							qualités de travail et du morale de ces équipes.
-							<br><br>
-							De l'autre côté, les développeurs se tournaient de plus en plus
-							vers l'agile et fournissaient des fonctionnalités innovantes de
-							façon de plus en plus dynamiques. Malheureusement, ils n'avait pas
-							cette "culture de la production" et cette rigeur qui permettait de
-							garantir une excellente sécurité lorsqu'il s'agit de gérer
-							l'environnement chaotiques que peut devenir un réseau en
-							production.
-							<br><br>
- 							Ils ont donc décidé de consitué des équipes hétérogènes
-							d'experts systèmes et réseaux et de développeurs qui devaient
-							trouver des solutions logiciels aux problèmes opérationnels
-							habituels. Les uns apportaient leur problématiques et exigeance de
-							sécurité et de robustesse et les autres leurs méthodes et outils
-							de travail dynamiques.
+							<ul>
+								<li><strong>2 profils :</strong></li>
+								<li>opérationnel</li>
+								<ul>
+									<li>rigoureuses</li>
+									<li>processus de management rigides</li>
+									<li>sécurité optimales</li>
+									<li>lenteurs</li>
+									<li>couts financiers</li>
+									<li>dégradation qualités travail</li>
+								</ul>
+								<li>développeurs</li>
+								<ul>
+									<li>agiles</li>
+									<li>fonctionnalités innovantes</li>
+									<li>dynamiques et rapides</li>
+									<li>culture de la production</li>
+									<li>- rigeur nécessaire</li>
+									<li>réseau prod chaotiques</li>
+								</ul>
+							</ul>
 						</aside>
 					</section>
 
+
 					<section>
 						DevOps = <span class=color-good>Sécurité</span> + <span class=color-good>Agilité</span>
+
+						<aside class=notes>
+ 							Ils ont donc décidé de consitué des équipes hétérogènes
+							d'experts systèmes et réseaux et de développeurs souvent appelés
+							DevOps. Liant ainsi agilité et sécurité.
+						</aside>
 					</section>
 
 				</section>
@@ -408,7 +405,7 @@
 						<aside class="notes">
 							Maintenant que nous avons une vue plus clair de SRE attaquons ce
 							qui est pour moi un des concepte les plus important ce mouvement
-							c'est celui de "l"inforastructure as code"
+							c'est celui de "l'inforastructure as code"
 						</aside>
 					</section>
 
@@ -421,7 +418,6 @@
 						<img class=fragment src="img/code_review.svg" width=200 />
 
 						<aside class="notes">
-							<!-- TODO simplifier - de vocabulaire -->
 							Le principe est simple: on veux abstraire les problématique
 							système en proposant des outils et une syntax qui nous permettrons
 							de décrire l'état souhaité d'une infrastructure par du code.
@@ -435,10 +431,11 @@
 						<img src="img/ansible.png" height=400 />
 
 						<aside class="notes">
-							<!-- TODO red hat -->
-							De nombreux outils permettent l'infrastructure as code mais c'est
-							un outil open source profitant d'une gande communauté et qui fait
-							l'état de l'art en la matière qui à été choisi.
+							<ul>
+								<li>état de l'art IAC</li>
+								<li>open source</li>
+								<li>Red Hat + communauté</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -449,14 +446,11 @@
 						<img src="img/diag_ansible.svg" height=400 />
 
 						<aside class="notes">
-							<ul>
-								<li>exemple : install web server sur machines vierges</li>
-								<li>inventaires (explain)</li>
-								<li>tasks = état (explain)</li>
-								<li>rôles c'est quoi</li>
-								<li>deux activités : écrire tâches, définir inventaire</li>
-							</ul>
-							<br><br>
+							Pour illustrer le fonctionnemnet d'ansible voyons l'installation
+							d'un serveur web sur des machines vierge. On les listes dans un
+							inventaire et on définis ensuite des taches pour permettre
+							l'installation du serveur web lors du déploiement. L'ensemble de
+							l'inventaire et des tâches s'appellent une recette ansible.
 						</aside>
 					</section>
 
@@ -554,20 +548,35 @@
 													aa08srvcervt006.cdweb.biz: {}
 									ungrouped: {}
 						</code></pre>
+
+						<aside class=notes>
+							<ul>
+								<li>groupe par datacenter</li>
+								<li>groupe par type</li>
+								<li>les même serveurs dans les deux groupes</li>
+							</ul>
+						</aside>
 					</section>
 
 
 					<section data-transition=zoom>
 						<h5>Architecture de la solution : plateforme Vault</h5>
 
-						<!-- TODO : enlever le zoom et dire qu'on zoom -->
-
 						<img src="img/diag_vault_platform.svg" width=1000 />
+
+						<aside class=notes>
+							<ul>
+								<li>schéma bilan du mémoire</li>
+								<li>bien plus détaillé dans le mémoire</li>
+							</ul>
+						</aside>
 					</section>
 
 
 					<section>
 						<h5>Répartition des rôles</h5>
+
+						<!-- TODO ajouter le terme role ansible -->
 
 						<div class="animation-parent" style="width: 700px">
 							<div class="animation-child fragment fade-in-then-out">
@@ -600,7 +609,6 @@
 
 					<section>
 						<h5>Définition de l'infrastructure</h5>
-						<!-- TODO : montrer ce dont on parle ! -->
 
 						<pre><code class="ansible"
 											 data-trim
@@ -648,10 +656,6 @@
 						</aside>
 					</section>
 
-
-					<!--
-					-->
-
 				</section>
 
 
@@ -677,19 +681,14 @@
 
 						<aside class="notes">
 							<ul>
-								<li>etapes fondamentales : arrange - act - assert</li>
+								<li>courant dans le monde du dev</li>
+								<li>
+									test : code supplémentaire qui va simuler l'éxecution du
+									programme dans des conditions particulières pour tester son
+									execution
+								</li>
+								<li>etapes fondamentales : 3A</li>
 							</ul>
-							Dans le monde opérationnel, nous sommes déjà habitué aux
-
-							- tests de PRA
-							- tests de sauvegarde
-							- tests de performance même
-
-							Mais le monde du développement logiciel est habitué a automatiser
-
-							- tests de non régression
-							- tests unitaires
-							- tests d'acceptances
 						</aside>
 					</section>
 
@@ -697,12 +696,19 @@
 					<section>
 						<h5>Technologies</h5>
 
-						<!-- TODO expliquer docker en une phrase -->
 						<img src="img/molecule.png" width=200 />
 						<span class=vertical-separator></span>
 						<img src="img/docker.png" width=200 />
 
 						<aside class="notes">
+							<ul>
+								<li>
+									molecule est un framework de test opensource pour ansible
+								</li>
+								<li>
+									docker est la technologie de containerisation la plus répandue
+								</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -710,14 +716,19 @@
 					<section>
 						<h5>Fonctionnement</h5>
 
+						<!-- TODO fond de construit et configure -->
 						<img src="img/diag_molecule.svg" width=500 />
 
-						<aside class="notes">
-							molecule provisionne infra et joue recette contre infra
+						<aside class=notes>
+							<ul>
+								<li>chemin arrange</li>
+								<li>chemin act</li>
+							</ul>
 						</aside>
 					</section>
 
 
+<!--
 					<section>
 						<h5>Create - Arrange</h5>
 
@@ -804,10 +815,11 @@
 						<aside class="notes">
 						</aside>
 					</section>
+					-->
 
 
 					<section>
-						<h5>Verify - Assert</h5>
+						<h5>Verify</h5>
 
 						<pre><code class="ansible"
 											 data-trim
@@ -825,16 +837,24 @@
 					</pre></code>
 
 						<aside class="notes">
+							<ul>
+								<li>extrait du rôle fragment-server</li>
+								<li>veux vérifier que vault recois appels de fragment</li>
+								<li>unit test : simulé les vault par des nginx</li>
+								<li>vérifie les logs pour constater connection</li>
+								<li>ca c'est l'étape assert</li>
+							</ul>
 						</aside>
 					</section>
 
 
 					<section>
-						<!-- TODO expliquer en une phrase -->
 						<img src="img/diag_tdd.svg" width=700 />
 
 						<aside class="notes">
-							on peut aller encore plus loin
+							le tdd test driven dévellopement est une méthodes de dév ou l'on
+							écrit les tests avant le code rendant le dévellopement plus
+							robuste
 						</aside>
 					</section>
 
@@ -860,6 +880,10 @@
 						<img src="img/continuous_integration.svg" width=300 />
 
 						<aside class="notes">
+							<ul>
+								<li>limite le temps entre feature et prod</li>
+								<li>supprime les intermédiaires humain : + de sécu</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -868,9 +892,6 @@
 						<h5>Technologies</h5>
 
 						<img src="img/version_control.svg" width=400 />
-
-						<aside class="notes">
-						</aside>
 					</section>
 
 
@@ -942,6 +963,7 @@
 					<section>
 						<h5>Technologies</h5>
 
+						<!-- TODO ajouter le nom sous les confluence / jira / docker -->
 						<img src="img/confluence.png" height="150" />
 						<span class=vertical-separator></span>
 						<img src="img/jira.png" height="150" />
@@ -960,6 +982,8 @@
 
 					<section>
 						<h5>Fonctionnement</h5>
+
+						<!-- TODO inverser CA / AC -->
 
 						<div class="animation-parent">
 							<div class="animation-child fragment fade-in-then-out">
@@ -985,11 +1009,6 @@
 						<h5>Architecture du code</h5>
 
 						<img src="img/diag_code_arch_product.svg" height=500 />
-
-						<aside class="notes">
-							repos submodules indépendants
-							roles testés unitairements
-						</aside>
 					</section>
 
 				</section>
@@ -1000,10 +1019,12 @@
 					<h3>Conclusion</h3>
 
 					<aside class="notes">
+						<!-- TODO structurer -->
 						<ul>
 							<li>on à vu que : iac - test - cicd - approche produit</li>
 							<li>apporte la qualité nécessaire à projet de sécu</li>
-							<li>sujet soutenance = passion</li>
+							<li>sujet = intéressant</li>
+							<li>travaillé en autonomie et à temp plein</li>
 							<li>+ grand truc que m'a apporté cdiscount</li>
 							<li>d'ailleur master spé sécu en école d'ingé</li>
 						</ul>
