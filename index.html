@@ -207,7 +207,6 @@
 						</div>
 
 						<aside class="notes">
-						  <!-- TODO auth serveur = server d'authentificiation -->
 							<ul>
 								<li>3 même acteurs</li>
 								<li>keycloak</li>
@@ -261,7 +260,6 @@
 							</li>
 							<li>complété - autres pistes de réponse</li>
 							<li>SLIDE</li>
-							<li>permet de parler d'élément cool pour dev de projet secu</li>
 						</ul>
 					</aside>
 				</section>
@@ -280,10 +278,11 @@
 						</ol>
 
 						<aside class="notes">
-							Nous allons voir comment ce projet utilise ou souhaite utiliser
-							les conceptes comme l'infrastrucutre as code, les tests automatisé
-							l'intégration continu et l'approche produit pour développer une
-							plateforme de sécurité selon les principes SRE.
+							Au travers de cette problématique nous allons voir comment ce
+							projet utilise ou souhaite utiliser les conceptes comme
+							l'infrastrucutre as code, les tests automatisé l'intégration
+							continu et l'approche produit pour développer une plateforme de
+							sécurité selon les principes SRE.
 							<br><br>
 							Avant d'entrer au coeur de cette soutenance, faisons le point sur
 							la définition même de SRE.
@@ -576,8 +575,6 @@
 					<section>
 						<h5>Répartition des rôles</h5>
 
-						<!-- TODO ajouter le terme role ansible -->
-
 						<div class="animation-parent" style="width: 700px">
 							<div class="animation-child fragment fade-in-then-out">
 								<img src="img/diag_vault_instance_0.svg" width=800 />
@@ -653,6 +650,11 @@
 						</code></pre>
 
 						<aside class="notes">
+							<ul>
+								<li>décrire l'infrastructure</li>
+								<li>lien entre inventaire et tâches</li>
+								<li>applique des rôles à des ensembles de machines</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -716,7 +718,6 @@
 					<section>
 						<h5>Fonctionnement</h5>
 
-						<!-- TODO fond de construit et configure -->
 						<img src="img/diag_molecule.svg" width=500 />
 
 						<aside class=notes>
@@ -931,11 +932,6 @@
 							Intégration / Déploiement Continu
 						</h4>
 						<h4 style="color: #e13b13">Approche Produit</h4>
-
-
-						<aside class="notes">
-							poussé par cdiscount très spécifiquement depuis cette année
-						</aside>
 					</section>
 
 
@@ -945,17 +941,15 @@
 						<img src="img/product.svg" height="300" />
 
 						<aside class="notes">
-							de plus en plus courant
-							vient de pair avec la démocratisation des méthodes agiles
-							souvent en opposition avec l'approche projet jugé trop vieille
-							est plus proche de agile par sont approche continue et iterative
-							une équipe est en charge d'un produit plus de quelques projets
-							permet de la modularité
-							c'est un mindset
-							on traite un produit comme quelquechose qu'on veut vendre à
-							l'exterieur
-							permet de remettre le client au centre
-							permet à cdiscount d'externaliser le produit AWSlike
+							<ul>
+								<li>de plus en plus courant viens des GAFAM</li>
+								<li>poussé de + en + par cdiscount</li>
+								<li>s'intègre bien avec agile</li>
+								<li>renouveller la façon de penser d'une équipe</li>
+								<li>équipe vend au reste d'entreprise</li>
+								<li>+ modulaire donc + de sécu</li>
+								<li>+ facile à transformer en source de revenu</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -971,11 +965,6 @@
 						<img src="img/docker.png" height="150" />
 
 						<aside class="notes">
-							technologies qui permettent la modularité et la gestion
-							de périmettre
-							tout ce qui est gestion projet et documentation jira / confluence
-							mais chaque espace orienté autour d'un produit (page monithor)
-							tout ce qui permet la modularité : docker, gestion des interfaces
 						</aside>
 					</section>
 
@@ -995,12 +984,6 @@
 						</div>
 
 						<aside class="notes">
-							pour appliquer cette approche produit on à voulu être distant du
-							reste de l'infra, on traite cdiscount comme un client à qui on
-							intègre un produit : vault
-							ainsi, aptly séparé, container séparé, ...
-							un max de documentation
-							playbooks généralistes
 						</aside>
 					</section>
 
