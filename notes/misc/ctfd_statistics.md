@@ -1,6 +1,6 @@
-# Digging into ctfd statistics
+<p style="text-align: right"><i>- 05/09/2022 -</i></p>
 
-<p style="text-align: right">_- 05/09/2022 -_</p>
+# Digging into ctfd statistics
 
 Download and unzip your ctf export from `/admin/export`.
 

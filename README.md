@@ -14,5 +14,5 @@ Contacts :
 Sections : 
 
 * [Activity](./ACTIVITY.md)
-* [Reading List](./READINGS.md)
+* [Reading List](./readings/)
 * [Notes](./notes/)

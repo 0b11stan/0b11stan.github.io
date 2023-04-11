@@ -1,6 +1,6 @@
-# Qemu magic
+<p style="text-align: right"><i>- 12/03/2022 -</i></p>
 
-<p style="text-align: right">_- last update 12/03/2022 -_</p>
+# Qemu magic
 
 Create a bridge :
 

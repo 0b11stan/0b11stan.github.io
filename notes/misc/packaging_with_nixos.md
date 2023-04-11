@@ -1,6 +1,6 @@
-# Packaging under NixOS
+<p style="text-align: right"><i>- 05/09/2022 -</i></p>
 
-<p style="text-align: right">_- 05/09/2022 -_</p>
+# Packaging under NixOS
 
 The following command build a local package (derivation) add keep the build folder for debugging.
 

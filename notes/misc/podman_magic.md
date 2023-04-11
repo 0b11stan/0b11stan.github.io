@@ -1,6 +1,6 @@
-# Podman magic
+<p style="text-align: right"><i>- 12/03/2022 -</i></p>
 
-<p style="text-align: right">_- last update 12/03/2022 -_</p>
+# Podman magic
 
 _in the following `s/podman/docker/` works_
 
