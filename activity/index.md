@@ -30,7 +30,7 @@ _incomming ..._
 
 ### Alternance - Cdiscount
 
-Ingénieur [SRE](https://sre.google/): _incomming ..._
+Ingénieur [SRE](https://sre.google/): Conception, développement et déploiement de la plateforme de gestion des secrets ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/)).
 
 ### Formation / Diplôme
 
@@ -40,7 +40,7 @@ Master Spécialisé Sécurité Informatique ([tlssec](https://tls-sec.github.io/
 
 ### Alternance - Cdiscount
 
-Ingénieur [SRE](https://sre.google/).
+Ingénieur [SRE](https://sre.google/) : Conception de la plateforme de gestion des secrets et MCO sur l'Infrastructure As Code. ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/))
 
 ### Formation / Diplôme - EPSI
 
@@ -50,7 +50,7 @@ Titre RNCP [niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp
 
 ### Alternance - Cdiscount
 
-Ingénieur [SRE](https://sre.google/).
+Ingénieur [SRE](https://sre.google/) : Déploiement, développement et MCO sur la plateforme d'Observabilité interne ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Elastic](https://www.elastic.co/), [fluent](https://www.fluentd.org/), [Ansible](https://docs.ansible.com/), [Terraform](https://www.terraform.io/), ...).
 
 ### Formation / Diplôme - EPSI
 
