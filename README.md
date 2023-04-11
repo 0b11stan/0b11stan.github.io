@@ -13,6 +13,6 @@ Contacts :
 
 Sections : 
 
-* [Activity](./ACTIVITY.md)
+* [Activity](./activity/)
 * [Reading List](./readings/)
 * [Notes](./notes/)
