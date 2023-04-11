@@ -1,4 +1,4 @@
-<style> img { height: 300px; } </style>
+<style> img { max-height: 300px; } </style>
 
 <p style="text-align: right"><i>- 11/04/2023 -</i></p>
 
@@ -16,7 +16,7 @@ Participation à l'[EC2](https://european-cybercup.com/) dans l'équipe [Capgemi
 
 #### Cyber Apocalypse
 
-![cyber apocalypse](ctf_cyberapocalypse.jpg)
+![cyber apocalypse](./img/ctf_cyberapocalypse.jpg)
 
 Participation au CTF [Cyber Apocalypse](https://www.hackthebox.com/events/cyber-apocalypse-2023) dans l'équipe [Capgemini Aces Of Spades](https://ctftime.org/team/87450) ou nous remportons [la 63ème place sur 4493 équipes](https://ctftime.org/event/1889).
 
@@ -24,21 +24,17 @@ Participation au CTF [Cyber Apocalypse](https://www.hackthebox.com/events/cyber-
 
 ### Consultant en Sécurité informatique - Capgemini
 
-![logo capgemini](./img/logo_capgemini.png)
+_incomming ..._
 
 ## 2021
 
 ### Alternance - Cdiscount
 
-Ingénieur [SRE](https://sre.google/).
-
-![logo cdiscount](./img/logo_cdiscount.png)
+Ingénieur [SRE](https://sre.google/): _incomming ..._
 
 ### Formation / Diplôme
 
 Master Spécialisé Sécurité Informatique ([tlssec](https://tls-sec.github.io/)) ([RNCP  niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html)) - ENSEEIHT.
-
-![logo enseeiht](./img/logo_enseeiht.png)
 
 ## 2020
 
@@ -46,13 +42,9 @@ Master Spécialisé Sécurité Informatique ([tlssec](https://tls-sec.github.io/
 
 Ingénieur [SRE](https://sre.google/).
 
-![logo cdiscount](./img/logo_cdiscount.png)
-
 ### Formation / Diplôme - EPSI
 
 Titre RNCP [niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+5) Architecture Logiciel & Développement - [EPSI](https://epsi.fr/).
-
-![logo epsi](./img/logo_epsi.svg)
 
 ## 2019
 
@@ -60,13 +52,9 @@ Titre RNCP [niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp
 
 Ingénieur [SRE](https://sre.google/).
 
-![logo cdiscount](./img/logo_cdiscount.png)
-
 ### Formation / Diplôme - EPSI
 
 Examen du TOEIC - **960/990**
-
-![logo epsi](./img/logo_epsi.svg)
 
 ## 2018
 
@@ -74,13 +62,9 @@ Examen du TOEIC - **960/990**
 
 Ingénieur [SRE](https://sre.google/).
 
-![logo cdiscount](./img/logo_cdiscount.png)
-
 ### Formation / Diplôme - EPSI
 
 Titre RNCP [niveau 6](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+3) - Système & Réseau.
-
-![logo epsi](./img/logo_epsi.svg)
 
 ## 2017
 
@@ -88,22 +72,22 @@ Titre RNCP [niveau 6](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp
 
 Ingénieur DevOps : Développement en R&D d'un système de supervision de la conformité asynchrone grâce à l'environnement cloud de Microsoft. (Azure-Functions, Event-Hub, Data-Stream, ...). Support technique N2 sur l'application web de HelloAsso.
 
-![logo helloasso](./img/logo_helloasso.png)
-
 ### Stage (2 mois) - Touton
 
 Developpeur full stack : Découverte des méthodes agiles et du TDD. Passage d'une solution de logistique interne vers un site web moderne en .Net (C#).
 
-![logo touton](./img/logo_touton.jpg)
-
 ### Formation / Diplôme - EPSI
 
 BTS SIO option SLAM spé Mathématiques.
-
-![logo epsi](./img/logo_epsi.svg)
 
 ## 2016
 
 ### Stage (3 semaines) - PSI informatique
 
 Développement full stack : Développement en R&D d'une interface web full stack (NodeJs) de gestion des noms de domaines à travers l'API d'ovh.
+
+## 2015
+
+### Formation / Diplôme - Lycée Montesquieu Bordeaux
+
+Bac S option ISN (Informatique et Science du Numérique)
