@@ -1,4 +1,4 @@
 # Notes
 
-* [Misc](./misc/)
+* [Miscellaneous](./misc/)
 * [Computer Piracy](./piracy/)
