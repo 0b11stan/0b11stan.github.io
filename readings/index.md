@@ -1,5 +1,7 @@
 <p style="text-align: right"><i>- 11/04/2023 -</i></p>
 
+<style> img { height: 300px; } </style>
+
 # Reading List
 
 ## René Barjavel - Ravage
@@ -89,6 +91,10 @@
 ## Neil Gaiman - La Mythologie Viking
 
 ![img/viking.jpg](img/viking.jpg)
+
+## Karl Marx & Fiedrich Engels - Le manifeste du parti communiste
+
+![img/communist_manifesto.jpg](img/communist_manifesto.jpg)
 
 ## Thomas S. Kuhn - La structure des révolutions scientifiques
 
