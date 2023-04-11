@@ -1,8 +1,6 @@
----
-title: "Authentifier les clients keycloak via un certificat x509"
----
+<p style="text-align: right"><i>- 21/03/2022 -</i></p>
 
-<p style="text-align: right">_- 21/03/2022 -_</p>
+# Authentifier les clients keycloak via un certificat x509
 
 [Keycloak](https://www.keycloak.org/) est un serveur d'authentification très réputé auprès des entreprises de grandes taille :
 

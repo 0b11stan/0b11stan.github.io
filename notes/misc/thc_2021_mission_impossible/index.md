@@ -1,8 +1,6 @@
----
-title: "Mission Impossible"
----
+<p style="text-align: right"><i>- 29/06/2021 -</i></p>
 
-<p style="text-align: right">_- 29/06/2021 -_</p>
+# THC 2021 - Write-Up : Mission Impossible
 
 Ce post fait parti d'une série de write-ups faisant suite au CTF de la [Toulouse
 Hacking Convention](https://thcon.party/) auquel j'ai eu la chance d'avoir
