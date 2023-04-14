@@ -34,6 +34,7 @@ OVMF_PATH=$(sudo find / -iname ovmf.fd 2>/dev/null | head -n 1)
 qemu-img create -f qcow2 $DISK_PATH 30G
 
 echo qemu-system-$ARCH \
+  -vga virtio \
   -enable-kvm \
   -m ${MEMORY}G \
   -smp cpus=$VCPU \
