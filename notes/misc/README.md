@@ -7,7 +7,7 @@
 * [Packaging under NixOS](./packaging_with_nixos.md)
 * [Digging into ctfd statistics](./ctfd_statistics.md)
 * [Podman Magic](./podman_magic.md)
-* [Qemu Magic](./qemu_magic.md)
+* [Qemu Magic](./qemu_magic/)
 * [Keycloak Mutual TLS Authentication](./keycloak_mutual_tls_authentication/)
 * [THC 2021 - Write-Up : Mission Impossible](./thc_2021_mission_impossible/)
 
