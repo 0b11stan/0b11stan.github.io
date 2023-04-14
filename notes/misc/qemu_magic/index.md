@@ -1,6 +1,6 @@
-<p style="text-align: right"><i>- 12/03/2022 -</i></p>
+<p style="text-align: right"><i>- 14/03/2022 -</i></p>
 
-# Qemu magic
+# Qemu Magic
 
 ## Cheat sheet
 
@@ -22,7 +22,7 @@ Installing a system is just booting on a CD-ROM :
 ... -cdrom $ISO_FILE -boot d
 ```
 
-By default, qemu is using a legacy bios, for UEFI, add :
+By default, qemu is using a legacy bios. For UEFI, add :
 
 ```bash
 ... -bios $(sudo find / -iname ovmf.fd 2>/dev/null | head -n 1)
@@ -34,7 +34,7 @@ For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'`.
 
 For 80% of my qemu (UEFI) usage I use the following scripts :
 
-### [`ks2usb.sh`](./ks2usb.sh)
+### [`ks2usb.sh`](./ks2usb.md)
 
 Converts a [kickstart](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html)
 file to a storage device image file. It can be attached to a VM during the
@@ -63,7 +63,7 @@ export PASS_USER=p4ssw0rD
 sudo ./ks2usb.sh ./ks.cfg ./usb.img
 ```
 
-### [`qemu-install.sh`](./qemu-install.sh)
+### [`qemu-install.sh`](./qemu-install.md)
 
 Creates a qemu virtual machine and launch installation process. You may provide
 the image of a device containing a kickstart file.
@@ -83,7 +83,7 @@ Exemple Usage :
 ./qemu-install.sh redhat-server.qcow2 /isos/rhel-server-7.9-x86_64-dvd.iso x86_64 ks-vm-server-autopart.img
 ```
 
-### [`qemu-networking.sh`]()
+### [`qemu-networking.sh`](./qemu-networking.md)
 
 This is a helper script that you can use to build the desired qemu network.
 Source it and use the builtin functions.

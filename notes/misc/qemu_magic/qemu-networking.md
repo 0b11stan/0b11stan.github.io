@@ -1,3 +1,6 @@
+# `qemu-networking.sh`
+
+```bash
 OVMF_PATH=$(sudo find /nix/store -iname ovmf.fd 2>/dev/null | head -n 1)
 
 makebridge() {
@@ -49,3 +52,4 @@ startvm() {
     -device virtio-net,netdev=network0,mac=$MAC \
     -snapshot &
 }
+```

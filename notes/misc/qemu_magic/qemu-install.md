@@ -1,3 +1,6 @@
+# `qemu-install.sh`
+
+```bash
 DISK_PATH=$1
 ISO_PATH=$2
 ARCH=$3
@@ -43,3 +46,4 @@ echo qemu-system-$ARCH \
   -cdrom $ISO_PATH \
   -bios $OVMF_PATH \
   -boot d | sh
+```

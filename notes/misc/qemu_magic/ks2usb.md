@@ -1,3 +1,6 @@
+# `ks2usb.sh`
+
+```bash
 test $# -eq 2 || {
   echo -e "Usage: sudo $0 KICKSTART OUTFILE\n"
   echo -e "    KICKSTART  Path to the kickstart file."
@@ -40,3 +43,4 @@ grep -i changeme $VOL/ks.cfg &>/dev/null \
 
 umount $VOL
 chown $SUDO_USER $IMG_PATH
+```
