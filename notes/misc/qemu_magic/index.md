@@ -6,7 +6,9 @@
 
 For 80% of my qemu usage I use the following scripts :
 
-### [`ks2usb.sh`](./ks2usb.sh)
+### `ks2usb.sh`
+
+**[|DOWNLOAD|](./ks2usb.sh)**
 
 Converts a [kickstart](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html)
 file to a storage device image file. It can be attached to a VM during the
