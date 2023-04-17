@@ -25,7 +25,7 @@ test -z "$ISO_PATH" && echo -e "Error: Missing ISO_PATH\n" && display_help
 test -z "$ARCH" && echo -e "Error: Missing ARCH\n" && display_help
 
 # arguments validity checks
-which qemu-system-$ARCH \
+which qemu-system-$ARCH &>/dev/null \
   || { echo -e "Error: $ARCH is not a valid arch\n" && display_help; }
 stat $ISO_PATH &>/dev/null \
   || { echo -e "Error: Cannot find iso image ($ISO_PATH)\n" && display_help; }

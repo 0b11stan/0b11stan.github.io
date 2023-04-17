@@ -30,6 +30,24 @@ By default, qemu is using a legacy bios. For UEFI, add :
 
 For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'`.
 
+List snapshots.
+
+```bash
+qemu-img snapshot -l redhat.qcow2
+```
+
+Create a snapshot
+
+```bash
+qemu-img snapshot -c mysnapshot redhat.qcow2
+```
+
+Revert to a snapshot
+
+```bash
+qemu-img snapshot -a mysnapshot redhat.qcow2
+```
+
 ## Scripts
 
 For 80% of my qemu (UEFI) usage I use the following scripts :
