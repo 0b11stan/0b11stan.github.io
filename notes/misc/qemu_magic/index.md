@@ -52,7 +52,7 @@ qemu-img snapshot -a mysnapshot redhat.qcow2
 
 For 80% of my qemu (UEFI) usage I use the following scripts :
 
-### [`ks2usb.sh`](./ks2usb.md)
+### [`ks2img.sh`](./ks2img.md)
 
 Converts a [kickstart](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html)
 file to a storage device image file. It can be attached to a VM during the
@@ -62,7 +62,7 @@ installation process to bootstrap the system without the need of user input
 secrets in a version control system for exemple.
 
 ```txt
-Usage: sudo ./ks2usb.sh KICKSTART OUTFILE
+Usage: sudo ./ks2img.sh KICKSTART OUTFILE
 
     KICKSTART  Path to the kickstart file.
     OUTFILE    Path to the resulting image.
@@ -78,7 +78,7 @@ Exemple usage :
 ```bash
 export PASS_LUKS=MyH4rdPassphr4s3
 export PASS_USER=p4ssw0rD
-sudo ./ks2usb.sh ./ks.cfg ./usb.img
+sudo ./ks2img.sh ./ks.cfg ./usb.img
 ```
 
 ### [`qemu-install.sh`](./qemu-install.md)

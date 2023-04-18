@@ -1,4 +1,4 @@
-# `ks2usb.sh`
+# `ks2img.sh`
 
 ```bash
 test $# -eq 2 || {
