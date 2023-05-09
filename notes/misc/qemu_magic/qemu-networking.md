@@ -1,10 +1,12 @@
 # `qemu-networking.sh`
 
 ```bash
-OVMF_PATH=$(sudo find /nix/store -iname ovmf.fd 2>/dev/null | head -n 1)
+test -z "$OVMF_PATH" \
+  && OVMF_PATH=$(sudo find /nix/store -iname ovmf.fd 2>/dev/null | head -n 1)
 
 makebridge() {
   BRIDGE_IFACE=$1; BRIDGE_IP=$2; BRIDGE_MASK=$3; PHY_IFACE=$4;
+  echo Making a bridge named $BRIDGE_IFACE with ip $BRIDGE_IP/$BRIDGE_MASK linked to $PHY_IFACE ...
 
   WLAN_GATEWAY=$(ip route | grep default | head -n 1 | cut -d ' ' -f 3)
 
@@ -20,7 +22,7 @@ makebridge() {
     sudo ip link set $PHY_IFACE master $BRIDGE_IFACE
   }
 
-  # make internet back on host
+  # makes internet back on host
   ip address show $BRIDGE_IFACE | grep "$BRIDGE_IP/$BRIDGE_MASK" \
     && echo "$BRIDGE_IFACE configured" || {
       sudo ip link set $PHY_IFACE down
@@ -39,13 +41,13 @@ maketap() {
 }
 
 startvm() {
-  TAP=$1; MAC=$2; DISK=$3
+  TAP=$1; MAC=$2; DISK=$3; MEM=$4; CPU=$5
   sudo ip link set dev $TAP up
   qemu-system-x86_64 \
     -vga virtio \
     -enable-kvm \
-    -m 4G \
-    -smp cpus=4 \
+    -m $MEM \
+    -smp cpus=$CPU \
     -hda $DISK \
     -bios $OVMF_PATH \
     -netdev tap,id=network0,ifname=$TAP,script=no,downscript=no \

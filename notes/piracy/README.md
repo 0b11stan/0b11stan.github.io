@@ -4,6 +4,20 @@
 
 ## Binary Exploitation
 
+## Active directory
+
+## Bluetooth
+
+## Cloud
+
+## Cryptanalysis
+
+## Deserializations
+
+## DNS
+
+## Embedded
+
 ### Reverse Engeneering
 
 Tools :
