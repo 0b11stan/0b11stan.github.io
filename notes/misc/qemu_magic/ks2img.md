@@ -20,7 +20,6 @@ changeme() {
   grep CHANGEME_$VAR $KSF &>/dev/null && test -z "${!VAR}" && {
     echo "ERROR: Variables need to be changed in the kickstart file ($KSF)."
     echo "       But no password has been provided as environement variable."
-    echo "       You can run '$VAR=mypassword $0 $@' to fix this issue."
     umount $(dirname $KSF)
     exit 1
   }

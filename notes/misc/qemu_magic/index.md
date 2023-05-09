@@ -4,6 +4,8 @@
 
 ## Cheat sheet
 
+### Run VM
+
 Run a simple qemu image with :
 
 ```bash
@@ -30,7 +32,7 @@ By default, qemu is using a legacy bios. For UEFI, add :
 
 For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'`.
 
-List snapshots.
+### Manage snapshots
 
 ```bash
 qemu-img snapshot -l redhat.qcow2
@@ -46,6 +48,22 @@ Revert to a snapshot
 
 ```bash
 qemu-img snapshot -a mysnapshot redhat.qcow2
+```
+
+### Manage local dhcp server
+
+```bash
+dnsmasq \
+  --port=0 \            # disable DNS server
+  --no-daemon \         # do not fork, run in foreground
+  --log-queries \       # log queries
+  --interface=br1 \     # listen on the given interface
+  --leasefile-ro \      # disable leasefile (no persistence)
+  --dhcp-option=3 \     # disable default gateway annonciation
+  --dhcp-option=6 \     # disable nameserver annonciation
+  --dhcp-range=10.10.10.1,static \
+  --dhcp-host=52:54:00:00:00:11,10.10.10.1 \
+  --dhcp-host=52:54:00:00:00:12,10.10.10.2
 ```
 
 ## Scripts
