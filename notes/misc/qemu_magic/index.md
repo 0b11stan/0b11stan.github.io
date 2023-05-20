@@ -30,9 +30,11 @@ By default, qemu is using a legacy bios. For UEFI, add :
 ... -bios $(sudo find / -iname ovmf.fd 2>/dev/null | head -n 1)
 ```
 
-For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'`.
-
 ### Manage snapshots
+
+For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'` :
+
+List snapshots
 
 ```bash
 qemu-img snapshot -l redhat.qcow2
@@ -52,6 +54,8 @@ qemu-img snapshot -a mysnapshot redhat.qcow2
 
 ### Manage local dhcp server
 
+This can be usefull to distribute ip addresses for chosen mac.
+
 ```bash
 dnsmasq \
   --port=0 \            # disable DNS server
@@ -65,6 +69,48 @@ dnsmasq \
   --dhcp-host=52:54:00:00:00:11,10.10.10.1 \
   --dhcp-host=52:54:00:00:00:12,10.10.10.2
 ```
+
+### Manage networks
+
+You may build any network topology using :
+
+* `tuntap` : a virtual interface that can be attached to a vm
+* `bridges` : a virtual interface that is behaving like a network hub
+
+Creating a *connected* bridge (`$WLAN` is the *connected* physical interface)
+
+```bash
+ip link add name br0 type bridge
+ip link set dev br0 up
+
+sysctl -w net.ipv4.ip_forward=1
+
+iptables -A FORWARD -i br0 -o $WLAN -j ACCEPT
+iptables -t nat -A POSTROUTING -o $WLAN -j MASQUERADE
+iptables -A FORWARD -i $WLAN -o br0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+```
+
+Attaching a virtual interface to a bridge (creating a virtual network).
+
+```bash
+sudo ip link add name br1 type bridge
+sudo ip link set dev br1 up
+sudo ip address add 10.10.10.1/24 dev br1
+
+sudo ip tuntap add dev tap11 mode tap
+sudo ip link set dev tap11 master br1
+sudo ip link set dev tap11 up
+```
+
+Attach a virtual tap to a qemu vm using the following options
+
+```txt
+  -netdev tap,id=network1,ifname=tap11,script=no,downscript=no
+  -device virtio-net,netdev=network1,mac=52:54:00:00:00:11
+```
+
+You may need to add `iptables` rules to allow networking between virtual
+interfaces.
 
 ## Scripts
 
