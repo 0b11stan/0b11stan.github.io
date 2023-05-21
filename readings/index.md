@@ -4,6 +4,14 @@
 
 # Reading List
 
+## Illine Genevski - Entre Deux Révolutions
+
+![img/genevski.jpg](img/genevski.jpg)
+
+## François-Xavier Coquin - La Révolution Russe
+
+![img/coquin.jpg](img/coquin.jpg)
+
 ## René Barjavel - Ravage
 
 ![img/ravage.jpg](img/ravage.jpg)
