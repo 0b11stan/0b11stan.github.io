@@ -1,3 +1,5 @@
+<p style="text-align: right">_- last update 31/01/2023 -_</p>
+
 # Coerce Windows Hosts
 
 [-COERCER-](https://github.com/p0dalirius/Coercer)
