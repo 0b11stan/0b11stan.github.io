@@ -4,9 +4,17 @@
 
 # Reading List
 
+## Cedric Villani - Les Mathematiques Sont la Poesie des Sciences
+
+![img/villani_poesie_science.jpg](img/villani_poesie_science.jpg)
+
 ## Illine Genevski - Entre Deux Révolutions
 
 ![img/genevski.jpg](img/genevski.jpg)
+
+## MISC n°125 - Web 2023
+
+![img/misc125.jpg](img/misc125.jpg)
 
 ## François-Xavier Coquin - La Révolution Russe
 
