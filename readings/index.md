@@ -100,6 +100,10 @@
 
 ![img/fondation1.jpg](img/fondation1.jpg)
 
+## Carlo Cafiero - L'abrégé du Capital
+
+![img/cafiero_abrege.jpg](img/cafiero_abrege.jpg)
+
 ## MISC n°92 - Exploration des techniques de Reverse Engineering
 
 ![img/misc92.jpg](img/misc92.jpg)
