@@ -32,8 +32,8 @@ stat $ISO_PATH &>/dev/null \
 test -z "$KICKSTART" \
   || stat $KICKSTART &>/dev/null \
   || { echo -e "Error: Cannot find kickstart ($KICKSTART)\n" && display_help; }
+test -z "$OVMF_PATH" && OVMF_PATH=$(find / -iname ovmf.fd 2>/dev/null | head -n 1)
 
-OVMF_PATH=$(sudo find / -iname ovmf.fd 2>/dev/null | head -n 1)
 qemu-img create -f qcow2 $DISK_PATH 30G
 
 echo qemu-system-$ARCH \
