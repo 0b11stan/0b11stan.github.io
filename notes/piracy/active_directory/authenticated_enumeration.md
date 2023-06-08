@@ -2,19 +2,20 @@
 
 # Authenticated Enumeration
 
-## Extract Authenticatied ldap informations
+## Extract common informations
 
 Dump computers
 
 ```bash
 windapsearch -d $DOMAIN -u $USER -p $PASSWORD -m computers \
   | grep -i dnshostname \
-  | cut -d ':' -f 2 \
-  | tr -d ' ' | tr '[:upper:]' '[:lower:]' \
-  | sort -u | tee computers.txt
+  | cut -d ' ' -f 2 \
+  | tr '[:upper:]' '[:lower:]' \
+  | sort -u \
+  | tee computers.txt
 ```
 
-Dump users
+Dump users and computes
 
 ```bash
 windapsearch -d $DOMAIN -u $USER -p $PASSWORD -m users

@@ -2,9 +2,15 @@
 
 # Computer Piracy
 
+## Wifi
+
+[LINK](./wifi/index.md)
+
 ## Binary Exploitation
 
 ## Active directory
+
+[LINK](./active_directory/index.md)
 
 ## Bluetooth
 

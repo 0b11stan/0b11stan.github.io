@@ -1,20 +1,26 @@
-<p style="text-align: right">_- last update 31/01/2023 -_</p>
+<p style="text-align: right">_- last update 08/06/2023 -_</p>
 
 # Unauthenticated enumeration
 
-## Domain metadata
+## Find domain name
 
-The following command extracts interesting informations on your AD.
-The most useful is probably the "domainFunctionnality", which is showing the
-compatibility level of your domain with old (and therefor vulnerable) microsoft
-versions and protocoles.
+```bash
+nmap --script broadcast-dhcp-discover
+```
+
+## Find domain controllers
+
+```bash
+nmap --script dns-srv-enum --script-args dns-srv-enum.domain=$DOMAIN
+```
+
+## Domain metadata
 
 ```bash
 windapsearch -d $DOMAIN_FQDN -m metadata
 ```
 
-For exemple the following oneliner is extracting the functionality level for
-each DC.
+extracting the functionality level for each DC
 
 ```bash
 for host in $(cat ads.txt); do 

@@ -1,17 +1,15 @@
-<p style="text-align: right">_- last update 31/01/2023 -_</p>
+<p style="text-align: right">- last update 08/06/2023 -</p>
 
 # Active Directory
 
 ## Summary
 
-* [Find domain]()
-* [Unauthenticated Enumerations]()
-* Get an initial valid account
-  - [User Enumeration](./user_enumeration.md)
-  - [Password Spraying](./user_enumeration.md)
+* [Unauthenticated Enumerations](./unauthenticated_enumeration.md)
+* [Get initial account : Password Spraying](./password_spraying.md)
 * [Authenticated enumerations](./authenticated_enumeration.md)
+* [Find uncommon shares](./shares.md)
 * Horizontal Escalation
-  - [Coerce](./authenticated_enumeration.md)
+  - [Coerce](./coerce.md)
   - [ADCS](./adcs.md)
   - [Read LAPS passwords](./laps.md)
   - [Memory Dumps](./memory_dumps.md)

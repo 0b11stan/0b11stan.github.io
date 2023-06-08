@@ -6,16 +6,17 @@
 
 * [Automated Enumeration](./automated_enumeration.md)
 * [Manual Enumeration](./manual_enumeration.md)
-* [Stored Credentials](./stored_credentials.md)
+* [Stored Credentials](./saved_credentials.md)
 * [Unattended Windows Installations](./unattended_windows_installations.md)
 * [Powershell and cmd History](./history.md)
 * [Credentials in Software](./software_credentials.md)
-* [Windows Kernel Exploits](./software_credentials.md)
+* [Windows Kernel Exploits](./kernel_exploits.md)
 * [DLL Hijacking](./dll_hijacking.md)
 * [Weak user privileges](./weak_user_privileges.md)
 * [Scheduled Tasks](./vulnerable_software.md)
 * [Insecure Service Permission](./insecure_service_permission.md)
 * [Unquoted Service Paths](./unquoted_service_path.md)
+* [IIS Configuration](./iis_configuration.md)
 
 
 ## Ressources
