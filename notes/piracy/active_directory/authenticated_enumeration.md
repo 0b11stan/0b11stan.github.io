@@ -66,13 +66,19 @@ some examples.
 Passwords not required
 
 ```bash
-jq -r '.data | .[] | select(.Properties.passwordnotreqd) | .Properties.name'
+cat *users* | jq -r '.data | .[] | select(.Properties.passwordnotreqd) | .Properties.name'
 ```
 
 Passwords that never expires
 
 ```bash
-jq -r '.data | .[] | select(.Properties.pwdneverexpires) | .Properties.name'
+cat *users* | jq -r '.data | .[] | select(.Properties.pwdneverexpires) | .Properties.name'
+```
+
+Protected users
+
+```bash
+cat *groups* | jq -r '.data[] | select(.Properties.name == "PROTECTED USERS@CNED.ORG") | .Members | .[].ObjectIdentifier' | wc -l
 ```
 
 Generate a json with only the juicy informations about each users.

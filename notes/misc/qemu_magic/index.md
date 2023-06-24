@@ -30,6 +30,46 @@ By default, qemu is using a legacy bios. For UEFI, add :
 ... -bios $(sudo find / -iname ovmf.fd 2>/dev/null | head -n 1)
 ```
 
+You may change settings and log activity in the vm while it's running with the
+monitor (can be attached to a file for later connection).
+
+```bash
+... -monitor stdio
+```
+
+### Share USB
+
+Find where is your usb stick
+
+```bash
+BUS=$(lsusb | grep -i ... | cut -d ' ' -f 2)
+ADDR=$(lsusb | grep -i ... | cut -d ' ' -f 4 | head -c 3)
+```
+
+Allow you access to your usb device file
+
+```bash
+sudo chown $USER /dev/bus/usb/$BUS/$ADDR
+```
+
+Add the following arguments to qemu
+
+```bash
+  -usb \
+  -device qemu-xhci,id=xhci \
+  -device usb-host,bus=xhci.0,hostbus=$BUS,hostaddr=$ADDR \
+```
+
+You can also add / remove USB devices dynamically using qemu monitor (the `-usb`
+flag must have been added beforehand on the command line).
+
+```bash
+device_add qemu-xhci,id=xhci
+device_add usb-host,bus=xhci.0,hostbus=2,hostaddr=7
+```
+
+For more detail [see the doc](https://www.qemu.org/docs/master/system/devices/usb.html).
+
 ### Manage snapshots
 
 For taking snapshots see `qemu-img --help | grep -A 5 'snapshot subcommand'` :
