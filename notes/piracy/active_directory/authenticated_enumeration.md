@@ -63,22 +63,33 @@ bloodhound-python --zip -c All -d $DOMAIN_FQDN -u $USER -p "$PASSWORD" -dc $DOMA
 Once you have the data, you can freely query the LDAP database offline. Here are
 some examples.
 
+(penser à rajouter des `select((.name | test(\"_ADMIN\")))` pour target
+uniquement les admins)
+
 Passwords not required
 
 ```bash
+cat *users* | jq -r '.data | .[].Properties | select(.passwordnotreqd) | .name'
 cat *users* | jq -r '.data | .[] | select(.Properties.passwordnotreqd) | .Properties.name'
 ```
 
 Passwords that never expires
 
 ```bash
+cat *users* | jq -r '.data | .[].Properties | select(.pwdneverexpires) | .name'
 cat *users* | jq -r '.data | .[] | select(.Properties.pwdneverexpires) | .Properties.name'
+```
+
+Password older than one year (31556952 seconds)
+
+```bash
+cat *users* | jq ".data | .[].Properties | select(.pwdlastset < $(($(date +%s) - 2*31556952))) | .name"
 ```
 
 Protected users
 
 ```bash
-cat *groups* | jq -r '.data[] | select(.Properties.name == "PROTECTED USERS@CNED.ORG") | .Members | .[].ObjectIdentifier' | wc -l
+cat *groups* | jq -r '.data[] | select(.Properties.name == "PROTECTED USERS@CNED.ORG") | .Members | .[].ObjectIdentifier'
 ```
 
 Generate a json with only the juicy informations about each users.
