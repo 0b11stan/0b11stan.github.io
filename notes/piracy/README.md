@@ -2,10 +2,6 @@
 
 # Computer Piracy
 
-## Wifi
-
-[LINK](./wifi/index.md)
-
 ## Binary Exploitation
 
 ## Active directory

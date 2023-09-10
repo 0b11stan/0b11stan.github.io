@@ -2,18 +2,6 @@
 
 # Unauthenticated enumeration
 
-## Find domain name
-
-```bash
-nmap --script broadcast-dhcp-discover
-```
-
-## Find domain controllers
-
-```bash
-nmap --script dns-srv-enum --script-args dns-srv-enum.domain=$DOMAIN
-```
-
 ## Domain metadata
 
 ```bash
