@@ -4,8 +4,6 @@
 
 ## Summary
 
-* [Unauthenticated Enumerations](./unauthenticated_enumeration.md)
-* [Get initial account : Password Spraying](./password_spraying.md)
 * [Authenticated enumerations](./authenticated_enumeration.md)
 * [Find uncommon shares](./shares.md)
 * Horizontal Escalation
