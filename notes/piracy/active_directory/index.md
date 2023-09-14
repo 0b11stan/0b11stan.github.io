@@ -4,7 +4,6 @@
 
 ## Summary
 
-* [Authenticated enumerations](./authenticated_enumeration.md)
 * [Find uncommon shares](./shares.md)
 * Horizontal Escalation
   - [Coerce](./coerce.md)
