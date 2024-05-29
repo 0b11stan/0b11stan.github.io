@@ -1,4 +1,5 @@
-*.drawio.bkp
-*.drawio.dtmp
-.obsidian/
-.trash/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

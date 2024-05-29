@@ -1,1 +1,37 @@
-theme: minima
+title: 0b11stan
+
+author:
+  name: Tristan Auvinet Pinaudeau
+  email: tristan@tic.sh
+
+description: >-
+  A blog about computer science (mostly). This is my humble take on explaining
+  some of the things I'm passionate about. Obviously, the opinions expressed are
+  my own and are not endorsed by my employers.
+
+# Subjects may range from system administration to cybersecurity to low-level kernel stuff to politics to CTF write-ups. 
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-polyglot
+
+exclude:
+  - serve.sh
+  - Containerfile
+
+minima:
+  skin: dark
+  social_links:
+  - { platform: github,  user_url: "https://github.com/0b11stan" }
+  - { platform: twitter, user_url: "https://twitter.com/0b11stan" }
+  - { platform: linkedin, user_url: "https://www.linkedin.com/in/tristan-pinaudeau/" }
+
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "assets", "images", "css", "public"]
+parallel_localization: true

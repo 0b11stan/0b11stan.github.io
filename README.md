@@ -1,18 +1,23 @@
-<p style="text-align: right"><i>- 11/04/2023 -</i></p>
+## Roadmap
 
-# Tristan Auvinet Pinaudeau
-
-Contacts :
-
-* [mail](mailto:tristan@tic.sh)
-* [GPG key](./res/tristan-pinaudeau.gpg)
-* [CV](./res/tristan-pinaudeau.pdf)
-* [Linkedin](https://www.linkedin.com/in/tristan-pinaudeau/)
-* [GitHub](https://github.com/0b11stan)
-* [Twitter](https://twitter.com/0b11stan)
-
-Sections : 
-
-* [Activity](./activity/)
-* [Reading List](./readings/)
-* [Notes](./notes/)
+- [x] improve le template pour mettre linkedin
+- [x] mettre un titre
+- [x] mettre une description
+- [ ] [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/) or [using polyglot](https://github.com/untra/polyglot)
+- [ ] ajouter un language switcher
+- [ ] faire un favicon
+- [ ] finir la page about
+- [ ] mettre sur un custom domain
+- [ ] article : bugged bunny write-up
+- [ ] article : defensive nixos
+- [ ] article : offensive nixos
+- [ ] article : open security
+- [ ] article : nuke code for luks
+- [ ] article : chocoblast hackback lvl 0 : desktop picture
+- [ ] article : chocoblast hackback lvl 1 : take picture
+- [ ] article : chocoblast hackback lvl 2 : show picture + message
+- [ ] article : chocoblast hackback lvl 3 : send to phone
+- [ ] article : exegol podman
+- [ ] article : exegol luks
+- [ ] article : qemu magic
+- [ ] article : scavenged server
