@@ -1,8 +1,9 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about/fr
 lang: fr
+ref: about
 ---
 
 \o/ Je m'appelle Tristan Auvinet Pinaudeau.
@@ -10,7 +11,7 @@ lang: fr
 
 Actuellement pentester à Capgemini, la majorité de mon activité se centre sur l'audite mais mon expertise en systèmes GNU/Linux et mon expérience passée de DevSecOps m'amène également à accompagner certain clients pour le renforcement de leur infrastructure Unix. J'ai aussi la chance de faire partie de l'équipe officielle [Aces Of Spades](https://www.capgemini.com/fr-fr/perspectives/publications/les-aces-of-spades-lequipe-de-capture-the-flag-de-capgemini/) qui me permet de réaliser un bon nombre de CTF tous les ans.
 
-Côté perso c'est : informatique, sport, concerts & festoch (punk, metal, electro, ...).
+Côté perso c'est : informatique, sport, concerts & fest (punk, metal, electro, ...).
 
 Ce qui suit est un historique de mes expériences pro. Une sorte de CV détaillé.
 Pour le TL;DR, téléchargez mon [vrai CV](https://github.com/0b11stan/resume/blob/main/resume.pdf).

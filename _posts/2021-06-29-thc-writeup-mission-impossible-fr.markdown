@@ -1,6 +1,7 @@
 ---
 title: "THC 2021 - Write-Up : Mission Impossible"
 lang: fr
+ref: thc-2021-writeup-mission-impossible
 ---
 
 Ce post fait parti d'une série de write-ups faisant suite au CTF de la [Toulouse

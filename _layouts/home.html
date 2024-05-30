@@ -27,14 +27,25 @@ layout: base
 
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
+
             <h3>
                 <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a>
             </h3>
+
             {%- if site.show_excerpts -%}
             {{ post.excerpt }}
             {%- endif -%}
+
+            <div class="post-lang">
+                {% for lang in languages %}
+                {%- assign post = posts | where: "lang", lang | first -%}
+                <a class="lang-flag" href="{{ post.url | relative_url }}">
+                    <img width=30 src="/assets/base/{{ lang }}.svg" />
+                </a>
+                {% endfor %}
+            </div>
         </li>
         {%- endfor -%}
     </ul>

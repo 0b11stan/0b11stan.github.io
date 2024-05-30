@@ -1,8 +1,9 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about/en
 lang: en
+ref: about
 ---
 
 \o/ Hi ! I'm Tristan Auvinet Pinaudeau.

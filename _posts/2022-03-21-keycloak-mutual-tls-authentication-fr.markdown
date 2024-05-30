@@ -1,6 +1,7 @@
 ---
 title: Authentifier les clients keycloak via un certificat x509
 lang: fr
+ref: keycloak-mutual-tls-authentication
 ---
 
 [Keycloak](https://www.keycloak.org/) est un serveur d'authentification très réputé auprès des entreprises de grandes taille :

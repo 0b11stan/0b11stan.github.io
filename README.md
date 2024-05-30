@@ -8,6 +8,7 @@
 - [ ] faire un favicon
 - [ ] finir la page about
 - [ ] mettre sur un custom domain
+- [ ] article : multilingual jenkins minima
 - [ ] article : bugged bunny write-up
 - [ ] article : defensive nixos
 - [ ] article : offensive nixos
@@ -21,3 +22,7 @@
 - [ ] article : exegol luks
 - [ ] article : qemu magic
 - [ ] article : scavenged server
+
+## Credits
+
+Flags for language selector are from https://flagicons.lipis.dev/
