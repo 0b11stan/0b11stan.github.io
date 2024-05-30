@@ -13,8 +13,18 @@ layout: base
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
 
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {%- assign refs = site.posts | map: "ref" | uniq -%}
+        {%- for ref in refs -%}
         <li>
+            {%- assign posts = site.posts | where: "ref", ref -%}
+            {%- assign languages = posts | map: "lang" -%}
+
+            {%- if languages contains "en" -%}
+            {%- assign post = posts | where: "lang", "en" | first -%}
+            {%- else -%}
+            {%- assign post = posts | first -%}
+            {%- endif -%}
+
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>
