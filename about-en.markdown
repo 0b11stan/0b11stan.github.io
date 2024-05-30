@@ -27,74 +27,46 @@ Participation in [EC2](https://european-cybercup.com/) as part of the [Capgemini
 
 Participation in the CTF [Cyber Apocalypse](https://www.hackthebox.com/events/cyber-apocalypse-2023) as part of the [Capgemini Aces Of Spades](https://ctftime.org/team/87450) team, where we came [63rd out of 4,493 teams](https://ctftime.org/event/1889).
 
-## 2022
-
-### Consultant en Sécurité informatique - Capgemini
+## 2022 : Cybersecurity consultant - Capgemini
 
 _incomming ..._
 
-## 2021
+## 2021 : Internship - Cdiscount X ENSEEIHT
 
-### Alternance - Cdiscount
+Specialized Master in IT Security ([tlssec](https://tls-sec.github.io/)) ([RNCP  niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html)) - ENSEEIHT.
 
-Ingénieur [SRE](https://sre.google/): Conception, développement et déploiement de la plateforme de gestion des secrets ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/)).
+[SRE](https://sre.google/) Engineer: Design, development and deployment of secret management platform ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/)).
 
-### Formation / Diplôme
+## 2020 : Internship - Cdiscount X EPSI
 
-Master Spécialisé Sécurité Informatique ([tlssec](https://tls-sec.github.io/)) ([RNCP  niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html)) - ENSEEIHT.
+RNCP [level 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+5) Software Architecture & Development - [EPSI](https://epsi.fr/).
 
-## 2020
+[SRE](https://sre.google/) Engineer: Design of secret management platform and exploitation of "As Code" infrastructures. ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/)).
 
-### Alternance - Cdiscount
+## 2018 & 2019 : Internship - Cdiscount X EPSI
 
-Ingénieur [SRE](https://sre.google/) : Conception de la plateforme de gestion des secrets et MCO sur l'Infrastructure As Code. ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/))
+TOEIC exam: **960/990**
 
-### Formation / Diplôme - EPSI
+RNCP [level 6](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+3) - System & Networking.
 
-Titre RNCP [niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+5) Architecture Logiciel & Développement - [EPSI](https://epsi.fr/).
+[SRE](https://sre.google/) Engineer: Deployment, development and exploitation of an internal Observability platform ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Elastic](https://www.elastic.co/), [fluent](https://www.fluentd.org/), [Ansible](https://docs.ansible.com/), [Terraform](https://www.terraform.io/), ...).
 
-## 2019
+## 2017 : Internship (1 an) - HelloAsso X EPSI
 
-### Alternance - Cdiscount
+DevOps Engineer: R&D of an asynchronous compliance monitoring system using Microsoft's cloud environment. (Azure-Functions, Event-Hub, Data-Stream, ...). N2 technical support on HelloAsso web application.
 
-Ingénieur [SRE](https://sre.google/) : Déploiement, développement et MCO sur la plateforme d'Observabilité interne ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Elastic](https://www.elastic.co/), [fluent](https://www.fluentd.org/), [Ansible](https://docs.ansible.com/), [Terraform](https://www.terraform.io/), ...).
+## 2017 : Internship (2 mois) - Touton X EPSI
 
-### Formation / Diplôme - EPSI
+Full stack developer: Discovery of agile methods and TDD. Transition from an internal logistics solution to a modern website in .Net (C#).
 
-Examen du TOEIC - **960/990**
+## 2017 : BTS - EPSI
 
-## 2018
+BTS SIO option SLAM specializing in mathematics.
 
-### Alternance - Cdiscount
+## 2016 : Internship (3 semaines) - PSI X EPSI
 
-Ingénieur [SRE](https://sre.google/) : Déploiement, développement et MCO sur la plateforme d'Observabilité interne ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Elastic](https://www.elastic.co/), [fluent](https://www.fluentd.org/), [Ansible](https://docs.ansible.com/), [Terraform](https://www.terraform.io/), ...).
+Full stack developer: R&D of a full stack web interface (NodeJs) for managing domain names through the ovh API.
 
-### Formation / Diplôme - EPSI
+## 2015 : Baccalauréat - Lycée Montesquieu Bdx
 
-Titre RNCP [niveau 6](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+3) - Système & Réseau.
-
-## 2017
-
-### Alternance (1 an) - HelloAsso
-
-Ingénieur DevOps : Développement en R&D d'un système de supervision de la conformité asynchrone grâce à l'environnement cloud de Microsoft. (Azure-Functions, Event-Hub, Data-Stream, ...). Support technique N2 sur l'application web de HelloAsso.
-
-### Stage (2 mois) - Touton
-
-Developpeur full stack : Découverte des méthodes agiles et du TDD. Passage d'une solution de logistique interne vers un site web moderne en .Net (C#).
-
-### Formation / Diplôme - EPSI
-
-BTS SIO option SLAM spé Mathématiques.
-
-## 2016
-
-### Stage (3 semaines) - PSI informatique
-
-Développement full stack : Développement en R&D d'une interface web full stack (NodeJs) de gestion des noms de domaines à travers l'API d'ovh.
-
-## 2015
-
-### Formation / Diplôme - Lycée Montesquieu Bordeaux
-
-Bac S option ISN (Informatique et Science du Numérique)
+Bac S option ISN (Computer and Digital Science)

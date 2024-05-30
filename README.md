@@ -3,8 +3,7 @@
 - [x] improve le template pour mettre linkedin
 - [x] mettre un titre
 - [x] mettre une description
-- [ ] [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/) or [using polyglot](https://github.com/untra/polyglot)
-- [ ] ajouter un language switcher
+- [x] [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/) or [using polyglot](https://github.com/untra/polyglot)
 - [ ] faire un favicon
 - [ ] finir la page about
 - [ ] mettre sur un custom domain
