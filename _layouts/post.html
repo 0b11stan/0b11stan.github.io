@@ -2,17 +2,7 @@
 layout: base
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div>
-        {% assign items=site.posts | where:"ref", page.ref | sort: 'lang' %}
-        {% for item in items %}
-        {%- if item.lang != page.lang -%}
-        <a class="lang-flag" href="{{ item.url }}">
-            <img width=50 src="/assets/base/{{ item.lang }}.svg" />
-        </a>
-        {%- endif -%}
-        {% endfor %}
-    </div>
+    {%- include switcher.html target=site.posts -%}
 
     <header class="post-header">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
