@@ -1,12 +1,9 @@
 ## Roadmap
 
-- [x] improve le template pour mettre linkedin
-- [x] mettre un titre
-- [x] mettre une description
 - [x] [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/) or [using polyglot](https://github.com/untra/polyglot)
-- [ ] faire un favicon
+- [x] mettre sur un custom domain
 - [ ] finir la page about
-- [ ] mettre sur un custom domain
+- [ ] faire un favicon
 - [ ] article : multilingual jenkins minima
 - [ ] article : bugged bunny write-up
 - [ ] article : defensive nixos
