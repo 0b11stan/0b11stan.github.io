@@ -1,7 +1,0 @@
----
-title: Test Fr
-lang: fr
-ref: test
----
-
-Ceci est un test

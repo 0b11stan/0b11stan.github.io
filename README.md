@@ -1,7 +1,5 @@
 ## Roadmap
 
-- [x] [Making Jekyll multilingual](https://sylvaindurand.org/making-jekyll-multilingual/) or [using polyglot](https://github.com/untra/polyglot)
-- [x] mettre sur un custom domain
 - [ ] finir la page about
 - [ ] faire un favicon
 - [ ] article : multilingual jenkins minima
