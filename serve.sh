@@ -1,4 +1,4 @@
-#podman build -t blog .
+podman build -t blog .
 
 podman run \
   --rm -it \

@@ -16,34 +16,159 @@ Côté perso c'est : informatique, sport, concerts & fest (punk, metal, electro,
 Ce qui suit est un historique de mes expériences pro. Une sorte de CV détaillé.
 Pour le TL;DR, téléchargez mon [vrai CV](https://github.com/0b11stan/resume/blob/main/resume.pdf).
 
+---
 
-## Avril 2023 : European Cyber Cup
+## 2024 : Consultant Cybersecurité - Capgemini
 
-![team ec2](/assets/about/ctf_ec2.jpg)
+### Mai : BreizhCTF & Sthack
 
-Participation à l'[EC2](https://european-cybercup.com/) dans l'équipe [Capgemini Aces Of Spades](https://ctftime.org/team/87450) ou nous remportons [la 3ème place sur 25 équipes](https://twitter.com/EuCyberCup/status/1644017921050419203).
+...
 
-## Mars 2023 : Cyber Apocalypse
+### Mars : Test d'intrusion applicatif - Bordeaux Métropole
+
+...
+
+---
+
+## 2023 : Consultant Cybersecurité - Capgemini
+
+### Décembre : Cours de sécurité offensive - LBP
+
+...
+
+### Sept - Mai : Cours de sécurité des OS - YNOV
+
+...
+
+### Juil - Oct : Automatisation MCO caméra IP - ADBM
+
+...
+
+### Fév - Dec : Conception & Intégration d'un SIA - ADBM
+
+Conception et déploiement d'un système informatique d'administration à l'état de l'art pour l'[Aéroport de Bordeaux-Mérignac](https://www.bordeaux.aeroport.fr/).
+
+...
+
+### Juin : CTF leHack - HZV
+
+![lehack @Everyone](/assets/about/ctf_lehack2023.jpg)
+
+Participation au CTF [leHack](https://lehack.org/) organisé par [HackerzVoice](https://hzv.fr/) au sein de l'équipe @Everyone ou nous remportons [la 2ème place](https://x.com/_leHACK_/status/1675361839230734336).
+
+### Mars : CTF Cyber Apocalypse - HackTheBox
 
 ![cyber apocalypse](/assets/about/ctf_cyberapocalypse.jpg)
 
-Participation au CTF [Cyber Apocalypse](https://www.hackthebox.com/events/cyber-apocalypse-2023) dans l'équipe [Capgemini Aces Of Spades](https://ctftime.org/team/87450) ou nous remportons [la 63ème place sur 4493 équipes](https://ctftime.org/event/1889).
+Participation au CTF [Cyber Apocalypse](https://www.hackthebox.com/events/cyber-apocalypse-2023) organisé par [HackTheBox](https://www.hackthebox.com/) au sein de l'équipe [Capgemini Aces Of Spades](https://ctftime.org/team/87450) ou nous remportons [la 63ème place sur 4493 équipes](https://ctftime.org/event/1889).
 
-## 2022 : Consultant en Sécurité informatique - Capgemini
+### Avril : European Cyber Cup (CTF) - EC2 X FIC
 
-_incomming ..._
+![team ec2](/assets/about/ctf_ec2.jpg)
 
-## 2021 : Alternance - Cdiscount X ENSEEIHT
+Participation à l'[EC2](https://european-cybercup.com/) lors du [Forum International de la Cybersécurité](https://www.forum-fic.com/) (Lille) au sein de l'équipe [Capgemini Aces Of Spades](https://ctftime.org/team/87450) ou nous remportons [la 3ème place sur 25 équipes](https://twitter.com/EuCyberCup/status/1644017921050419203).
+
+### Multiples TI internes et externe (France Relance)
+
+Réalisation de tests d'intrusion (TI) interne et externe dans le cadre du plan France Relance [encadré par les parcours de cybersécurité de l'ANSSI](https://cyber.gouv.fr/parcours-de-cybersecurite).
+
+Clients :
+
+- [Centre Hospitalier de Saintes](https://saintes.gh-saintesangely.fr/) (janvier)
+- [Grand Dax](https://www.grand-dax.fr/) (février)
+- ...
+
+---
+
+## 2022 : Consultant Cybersecurité - Capgemini
+
+### Décembre : Test d'intrusion interne - SMACL
+
+Test d'intrusion interne avec accent sur le réalisme au sein des locaux du client en prévision d'une fusion avec la Maif.
+
+### Novembre - Décembre : Organisation d'un CTF - Enedis
+
+Préparation et déroulement d'un CTF interne de plusieurs semaines pour le client.
+
+- création et/ou adaptation de challenges
+- déploiement et maintenance de l'infrastructure
+- mise en place du monitoring technique et métier
+- communication
+
+### Octobre - Décembre : Formation Forensic SWAT
+
+Formation interne à l'inforensic et la réponse aux incidents cyber auprès des équipes SWAT de Captemini.
+
+### Aout : Conférence sur Nixos - Hack'It'N
+
+Présentation d'une conférence sur la distribution [Nixos](https://nixos.org/) et ses avantages en terme de sécurité informatique (blueteam) lors de l'[Hack'It'N](https://hack-it-n.com/).
+
+<iframe width="740" height=420 src="https://www.youtube.com/embed/GpJdcgxwxVE?start=23867" title="Live Hack It N" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Avril : Animation d'une table ronde - THC 2022
+
+Animation d'une table ronde lors de la Toulouse Hacking Convention sur le sujet de "...".
+
+Les participants :
+
+- [Sébastien Rabaud](https://www.linkedin.com/in/%E2%9A%96-s%C3%A9bastien-rabaud-9657111/)
+- [Rémi Daudigny](https://www.linkedin.com/in/remydaudigny/)
+- [Thomas Bougamont](https://www.linkedin.com/in/thomas-bougamont-b0532088/)
+
+<iframe width="740" height=420 src="https://www.youtube.com/embed/kgNqzx8aR0I?start=8786" title="THCon 2022, day 1/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Mars - Septembre : Purple Team LBP
+
+Accompagnement de l'équipe SOC de [La Banque Postale](https://www.labanquepostale.fr/) pour tester la robustesse et l'efficacité de leurs systèmes de détection et de prévention des intrusions et des exfiltrations de donnée.
+
+### Multiples TI internes et externe (France Relance)
+
+Réalisation de tests d'intrusion (TI) interne et externe dans le cadre du plan France Relance [encadré par les parcours de cybersécurité de l'ANSSI](https://cyber.gouv.fr/parcours-de-cybersecurite).
+
+Clients :
+
+- [Métropole de Lille](https://www.lillemetropole.fr/) (janvier)
+- [Institut national de l'environnement industriel et des risques (Ineris)](https://www.ineris.fr/en) (février)
+- ...
+
+### Multiples TI applicatifs
+
+Réalisation de tests d'intrusion applicatifs (web) type OWASP.
+
+Clients :
+
+- [Crédit Agricole Technologies Et Services (CATS)](https://www.credit-agricole.com/marques-et-metiers/toutes-nos-marques/credit-agricole-technologies-et-services) (février)
+- [Naveblue (airbus)](https://www.navblue.aero/) (mars)
+- ...
+
+---
+
+## 2021 : Consultant Cybersecurité - Capgemini
+
+### Oct 2021 - Jan 2022 : Region Nouvelle-Aquitaine
+
+Intégration d'un portail d'authentification keycloak pour les agents de la région Nouvelle-Aquitaine en préparation du déploiement du SSO à grande échelle.
+
+### Nov - Dec 2021 : Cdiscount / Baleen
+
+Réalisation d'un test d'intrusion web pour une nouvelle solution de firewall applicatif dévellopé par Cdiscount en prévision d'une certification CSPN de niveau 1.
+Aide à la réalisation d'une cible de sécurité.
+
+### Jan - Dec : Alternance - Cdiscount X ENSEEIHT
 
 Master Spécialisé Sécurité Informatique ([tlssec](https://tls-sec.github.io/)) ([RNCP  niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html)) - ENSEEIHT.
 
 Ingénieur [SRE](https://sre.google/): Conception, développement et déploiement de la plateforme de gestion des secrets ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/)).
+
+---
 
 ## 2020 : Alternance - Cdiscount X EPSI
 
 Titre RNCP [niveau 7](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+5) Architecture Logiciel & Développement - [EPSI](https://epsi.fr/).
 
 Ingénieur [SRE](https://sre.google/) : Conception de la plateforme de gestion des secrets et MCO sur l'Infrastructure As Code. ([Vault](https://www.hashicorp.com/products/vault), [Keycloak](https://www.keycloak.org/), [Ansible](https://docs.ansible.com/ansible/latest/index.html), [Molecule](https://molecule.readthedocs.io/en/latest/), [Terraform](https://www.terraform.io/))
+
+---
 
 ## 2018 & 2019 : Alternance - Cdiscount X EPSI
 
@@ -52,6 +177,8 @@ Examen du TOEIC : **960/990**
 Titre RNCP [niveau 6](https://www.letudiant.fr/etudes/qu-est-ce-qu-un-titre-rncp.html) (bac+3) - Système & Réseau.
 
 Ingénieur [SRE](https://sre.google/) : Déploiement, développement et MCO sur la plateforme d'Observabilité interne ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), [Elastic](https://www.elastic.co/), [fluent](https://www.fluentd.org/), [Ansible](https://docs.ansible.com/), [Terraform](https://www.terraform.io/), ...).
+
+---
 
 ## 2017 : Alternance (1 an) - HelloAsso X EPSI
 
@@ -65,9 +192,13 @@ Developpeur full stack : Découverte des méthodes agiles et du TDD. Passage d'u
 
 BTS SIO option SLAM spé Mathématiques.
 
+---
+
 ## 2016 : Stage (3 semaines) - PSI X EPSI
 
 Développeur full stack : Développement en R&D d'une interface web full stack (NodeJs) de gestion des noms de domaines à travers l'API d'ovh.
+
+---
 
 ## 2015 : Baccalauréat - Lycée Montesquieu Bdx
 
